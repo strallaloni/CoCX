@@ -907,5 +907,27 @@ public class Soulforce extends BaseContent
 	public function analLover():void {
 		SceneLib.helScene.helSexualAmbush();
 	}
+	
+	public function Measurement(inch:Number, scale:int=0):String {
+			
+		var value:String = "";
+		var metres:Number = 0;
+		var km:Number = 0;
+		var cm:Number = 0;
+		metres = Math.round(inch * 2.54) / Math.pow(10, 2)
+		km = metres / 1000;
+		cm = Math.round(metres * 100);
+		if (scale == 0) {
+			
+			value += metres.toFixed(2) + " metres/";
+			value += km.toFixed(3) + " km";
+		}
+		if (scale == 1) {
+			
+			value += cm.toString() + " cm/";
+			value += metres.toFixed(2) + " metres";
+		}
+		return value;
+	}
 }
 }

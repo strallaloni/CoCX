@@ -6,6 +6,8 @@ import classes.IMutations.IMutationsLib;
 import classes.Player;
 import classes.Scenes.Places.HeXinDao.JourneyToTheEast;
 
+import classes.GlobalFlags.kFLAGS;
+
 public class CoreStat extends RawStat{
 	public function CoreStat(host:Creature, name:String) {
 		super(host, name, {min:0, value:0, max: 100});
@@ -13,7 +15,15 @@ public class CoreStat extends RawStat{
 	
 	override public function get max():Number {
 		if (host is Monster) return Infinity;
-		var base:Number = 100;
+		var base:Number = 1000;
+		
+		for (var i:int = 1; i <= host.flags.[kflags.NEW_GAME_PLUS_LEVEL]; i++) {
+			
+			if (host.hasPerk(PerkLib.Goddess)
+				base += 1500;
+			else
+				base += 1000;
+		}
 		base += 2 * host.perkv1(PerkLib.AscensionTranshumanism);
 		if (host.hasPerk(PerkLib.MunchkinAtBioLab)) base += 10;
 		switch (statName) {

@@ -51,6 +51,8 @@ public class PerkLib
 				"Gains cock size 25% faster and with less limitations.", null, true);
 		public static const MessyOrgasms:PerkType = mk("Messy Orgasms", "Messy Orgasms",
 				"Produces 100% more cum volume.", null, true);
+				
+		public static const Goddess:PerkType = mk("Goddess", "Goddess", "You're now a goddess.", null, true);
 
 		// Ascension perks
 		public static const AscensionBloodlust:AscensionBloodlustPerk = new AscensionBloodlustPerk();
