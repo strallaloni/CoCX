@@ -11,21 +11,17 @@ package classes.Scenes
 	import classes.lists.BreastCup;
 	import classes.GlobalFlags.kFLAGS;
 	import classes.Player;
+	import classes.Stats.GoddessStats;
 	
 	use namespace Coc;
 	
-	public class Goddess extends BaseContent
-	{
-		public var cock_hidden:Boolean = false;
-		public var masculine_face:Boolean = false;
-		public var power_modifier:Number = 1.0;
-		public var real_body_size:Number = 73;
-		public var real_breast_size:int = BreastCup.G;
-		public var real_cock_length:Number = 4.0;
-		public var real_cock_thickness:Number = 1.0;
-		public var vagina_hidden:Boolean = false;
+	public class Goddess extends BaseContent {	
 		
-		public function Goddess():void {
+		public var goddess_stats:GoddessStats;
+		
+		public function Goddess(stats:GoddessStats):void {
+			
+			goddess_stats = stats;
 			
 			mainViewManager.showPlayerDoll(false);
 			clearOutput();
@@ -56,14 +52,14 @@ package classes.Scenes
 				}
 				outputText(boobs);
 			}
-			if (player.breastCup(0) > real_breast_size)
-				outputText("You're currently showing off enlargened breasts. Your breasts are actually just " + player.breastRows[0].breastRating >= 1 ? " " + real_breast_size : "") + " breasts.\n");
-			else if (player.breastCup(0) < real_breast_size) 
-		outputText("You're currently hiding the true size of your rack. In reality you have "player.breastRows[0].breastRating >= 1 ? " " + real_breast_size : "") + "breasts.\n");
+			if (player.breastCup(0) > goddess_stats.real_breast_size)
+				outputText("You're currently showing off enlargened breasts. Your breasts are actually just " + player.breastRows[0].breastRating >= 1 ? " " + goddess_stats.real_breast_size : "") + " breasts.\n");
+			else if (player.breastCup(0) < goddess_stats.real_breast_size) 
+		outputText("You're currently hiding the true size of your rack. In reality you have "player.breastRows[0].breastRating >= 1 ? " " + goddess_stats.real_breast_size : "") + "breasts.\n");
 			outputText("You have a " + vaginaDescript(0) + "\n");
 			outputText("You have a " + Measurement(player.cocks[0].cockLength) + " long and " + Measurement(player.cocks[0].cockThickness) + "thick " + player.cockDescript() + "\n");
-			if (player.cocks[0].cockLength != real_cock_length)
-				outputText("You're currently hiding the true size of your dick. It is actually " + Measurement(real_cock_length) + " long and " + Measurement(real_cock_thickness) + " thick.");
+			if (player.cocks[0].cockLength != goddess_stats.real_cock_length)
+				outputText("You're currently hiding the true size of your dick. It is actually " + Measurement(goddess_stats.real_cock_length) + " long and " + Measurement(goddess_stats.real_cock_thickness) + " thick.");
 				
 			menu();
 			addButton(0, "Toggle Features", ToggleFeatures);
@@ -103,8 +99,16 @@ package classes.Scenes
 				outputText("Your cock is currently hidden.\n");
 			else {
 				outputText("You're not hiding your cock at the moment. ");
-				if (player.cocks[0].cockLength == real_cock_length)
-					outputText("Your dick is at its full length: " + Measurement(real_cock_length)+ ".");
+				if (player.cocks[0].cockLength == goddess_stats.real_cock_length)
+					outputText("Your dick is at its full length: " + Measurement(goddess_stats.real_cock_length)+ ".");
+			}
+			if (!player.isLactating())
+				outputText("You're not lactating.\n");
+			else {
+				outputText("You're lactating " + player.lactationQ() + " ml of milk\n");
+				if (player.lactationQ() != goddess_stats.real_lactation_Vol) {
+					outputText("Your real lactation volume is " + goddess_stats.real_lactation_vol + " ml.\n");
+				}
 			}
 			
 			menu();
@@ -116,19 +120,33 @@ package classes.Scenes
 				addButton(1, "Show Cock", ToggleCock);
 			else
 				addButton(1, "Hide Cock", ToggleCock);
-			if (player.cocks[0].cockLength != real_cock_length)
+			if (player.cocks[0].cockLength != goddess_stats.real_cock_length)
 				addButton(2, "Show true cock", ToggleTrueCock);
 			else
 				addButton(2, "Shrink cock down", ToggleTrueCock);
-			if (player.breastRows[0].breastRating != real_breast_size)
+			if (player.breastRows[0].breastRating != goddess_stats.real_breast_size)
 				addButton(3, "Show true breasts", ToggleTrueBreasts);
 			else
 				addButton(3, "Hide true breasts", ToggleTrueBreasts);
-			if (player.tallness != real_body_size)
+			if (player.tallness != goddess_stats.real_body_size)
 				addButton(4, "Show true size", ToggleTrueSize);
 			else
 				addButton(4, "Hide true size", ToggleTrueSize);
-			addButton(5, "Toggle masculinity", ToggleMasculinity);
+			
+			if (player.isLactating())
+				addButton(5, "Stop Lactation", ToggleLactation);
+			else
+				addButton(5, "Start Lactation", ToggleLactation);
+			if (player.lactationQ() != goddess_stats.real_lactation_vol)
+				addButton(6, "True Milk Volume", ToggleTrueLactation);
+			else
+				addButton(6, "Normal Milk Volume", ToggleTrueLactation);
+			if (player.hasCock() && player.cumQ() != goddess_stats.real_cum_vol)
+				addButton(7, "True Cum Volume", ToggleTrueCum);
+			else if (player.hasCock())
+				addButton(7, "Normal Cum Volume", ToggleTrueCum);
+			addButton(8, "Toggle masculinity", ToggleMasculinity);	
+			
 		}
 		
 		public function ToggleVagina():void {

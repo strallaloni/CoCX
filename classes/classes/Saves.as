@@ -766,6 +766,18 @@ public function saveGameObject(slot:String, isFile:Boolean):void
 			}
 		}
 		saveFile.data.counters = [];
+		
+		//Goddess Stuff
+		saveFile.data.cock_hidden = player.goddess_stats.cock_hidden;
+		saveFile.data.masculine_face = player.goddess_stats.masculine_face;
+		player.goddess_stats.power_modifier = saveFile.data.power_modifier;
+		player.goddess_stats.real_body_size = saveFile.data.real_body_size;
+		player.goddess_stats.real_breast_size = saveFile.data.real_breast_size;
+		player.goddess_stats.real_cock_length = saveFile.data.real_cock_length;
+		player.goddess_stats.real_cock_thickness = saveFile.data.real_cock_thickness;
+		player.goddess_stats.real_cum_vol = saveFile.data.real_cum_vol;
+		player.goddess_stats.real_lactation_vol = saveFile.data.real_lactation_vol;
+		player.goddess_stats.vagina_hidden = saveFile.data.vagina_hidden;
 
 		//CLOTHING/ARMOR
 		saveFile.data.armorId = player.armor.id;
@@ -1728,6 +1740,19 @@ public function loadGameObject(saveData:Object, slot:String = "VOID"):void
 		}
 		unFuckSaveDataBeforeLoading(saveFile.data);
 		//PIERCINGS
+		
+		// Goddess Stuff
+		player.goddess_stats.cock_hidden = saveFile.data.cock_hidden;
+		player.goddess_stats.masculine_face = saveFile.data.masculine_face;
+		saveFile.data.power_modifier = player.goddess_stats.power_modifier;
+		saveFile.data.real_body_size = player.goddess_stats.real_body_size; 
+		saveFile.data.real_breast_size = player.goddess_stats.real_breast_size;
+		saveFile.data.real_cock_length = player.goddess_stats.real_cock_length;
+		saveFile.data.real_cock_thickness = player.goddess_stats.real_cock_thickness;
+		saveFile.data.real_cum_vol = player.goddess_stats.real_cum_vol;
+		saveFile.data.real_lactation_vol = player.goddess_stats.real_lactation_vol;
+		saveFile.data.vagina_hidden = player.goddess_stats.vagina_hidden;
+		
 
 		//trace("LOADING PIERCINGS");
 		player.nipplesPierced = saveFile.data.nipplesPierced;

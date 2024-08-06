@@ -1643,7 +1643,8 @@ public class PlayerInfo extends BaseContent {
 		//if (player.level % 2 == 0) player.ascensionPerkPoints++;
 		//przerobić aby z asc perk co ?6/3/1? lvl dostawać another perk point?
 		var gainedPerks:Number = 1;
-		var gainedStats:Number = 5;
+		//var gainedStats:Number = 5;
+		var gainedStats:Number = 600 + (1800 * player.newGamePlusMod());
 		if (player.hasPerk(PerkLib.AscensionAdvTrainingX)) gainedStats += (player.perkv1(PerkLib.AscensionAdvTrainingX) * 4);
 		// Perks: New character starts with 1 background perk or free point, 1 free point from character creation, (so 2) on top of these; at level 0
 		if (player.level <= 9) gainedPerks *= 2, gainedStats *= 2;
@@ -1808,9 +1809,9 @@ public class PlayerInfo extends BaseContent {
 	}
 
 	private function addAttribute(attribute:String):void {
-		var n:int=1;
+		var n:int=20;
 		var m:int;
-		if (shiftKeyDown) n = 5;
+		if (shiftKeyDown) n = 60;
 		if (n > player.statPoints) n = player.statPoints;
 		switch (attribute) {
 			case "str":
@@ -1855,8 +1856,8 @@ public class PlayerInfo extends BaseContent {
 		attributeMenu();
 	}
 	private function subtractAttribute(attribute:String):void {
-		var n:int=1;
-		if (shiftKeyDown) n = 5;
+		var n:int=25;
+		if (shiftKeyDown) n = 75;
 		switch (attribute) {
 			case "str":
 				if (player.tempStr < n) n = player.tempStr;

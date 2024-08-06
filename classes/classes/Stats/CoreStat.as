@@ -15,15 +15,19 @@ public class CoreStat extends RawStat{
 	
 	override public function get max():Number {
 		if (host is Monster) return Infinity;
-		var base:Number = 1000;
+		var base:Number = 100000;
 		
-		for (var i:int = 1; i <= host.flags.[kflags.NEW_GAME_PLUS_LEVEL]; i++) {
+		if (host.hasPerk(PerkLib.Goddess))
+			base += 20000 * host.flags[kFLAGS.NEW_GAME_PLUS_LEVEL];
+		else
+			base += 10000 * host.flags[kFLAGS.NEW_GAME_PLUS_LEVEL];
+		/*for (var i:int = 1; i <= host.flags.[kflags.NEW_GAME_PLUS_LEVEL]; i++) {
 			
-			if (host.hasPerk(PerkLib.Goddess)
+			if (host.hasPerk(PerkLib.Goddess))
 				base += 1500;
 			else
 				base += 1000;
-		}
+		}*/
 		base += 2 * host.perkv1(PerkLib.AscensionTranshumanism);
 		if (host.hasPerk(PerkLib.MunchkinAtBioLab)) base += 10;
 		switch (statName) {

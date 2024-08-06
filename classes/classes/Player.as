@@ -55,6 +55,7 @@ import classes.Scenes.Places.WoodElves;
 import classes.Scenes.Pregnancy;
 import classes.Scenes.SceneLib;
 import classes.Stats.Buff;
+import classes.Stats.GoddessStats;
 import classes.Stats.Skills.AlchemySkill;
 import classes.Stats.StatUtils;
 import classes.StatusEffects.HeatEffect;
@@ -78,6 +79,7 @@ use namespace CoC;
 			for (var duration:int = 0; duration < CombatAbility.Registry.length; duration++) {
 				durations[duration] = 0;
 			}
+			goddess_stats = new GoddessStats();
 			//Item things
 			itemSlot1 = new ItemSlotClass();
 			itemSlot2 = new ItemSlotClass();
@@ -252,6 +254,8 @@ use namespace CoC;
 		override public function pregnancyUpdate():Boolean {
 			return pregnancy.updatePregnancy(); //Returns true if we need to make sure pregnancy texts aren't hidden
 		}
+		
+		public var goddess_stats:GoddessStats;
 		
 		// Inventory
 		public var itemSlot1:ItemSlotClass;

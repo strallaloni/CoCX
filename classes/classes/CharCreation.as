@@ -24,6 +24,7 @@ import classes.Scenes.Metamorph;
 import classes.Scenes.NPCs.JojoScene;
 import classes.Scenes.NPCs.XXCNPC;
 import classes.Scenes.SceneLib;
+import classes.Stats.GoddessStats;
 import classes.display.SpriteDb;
 import classes.lists.BreastCup;
 import classes.lists.Gender;
@@ -38,30 +39,33 @@ import classes.Scenes.Combat.CombatAbility;
 
 		public const MAX_TOLERANCE_LEVEL:int = 10;
 		public const MAX_MORALSHIFTER_LEVEL:int = 10;
-		public const MAX_DESIRES_LEVEL:int = 35;
-		public const MAX_ENDURANCE_LEVEL:int = 35;
-		public const MAX_HARDINESS_LEVEL:int = 35;
-		public const MAX_SOULPURITY_LEVEL:int = 35;
-		public const MAX_INNERPOWER_LEVEL:int = 35;
-		public const MAX_FURY_LEVEL:int = 35;
-		public const MAX_KILLINGINTENT_LEVEL:int = 30;
-		public const MAX_BLOODLUST_LEVEL:int = 30;
-		public const MAX_MYSTICALITY_LEVEL:int = 30;
-		public const MAX_SPIRITUALENLIGHTENMENT_LEVEL:int = 30;
-		public const MAX_WISDOM_LEVEL:int = 50;
-		public const MAX_TRANSHUMANISM_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_STR_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_TOU_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_SPE_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_INT_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_WIS_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_LIB_LEVEL:int = 35;
-		public const MAX_TRANSHUMANISM_SEN_LEVEL:int = 35;
-		public const MAX_FORTUNE_LEVEL:int = 50;
-		public const MAX_VIRILITY_LEVEL:int = 10;
-		public const MAX_FERTILITY_LEVEL:int = 10;
-		public const MAX_MILK_FAUCET_LEVEL:int = 25;
-		public const MAX_CUM_HOSE_LEVEL:int = 25;
+		public const MAX_DESIRES_LEVEL:int = 350;
+		public const MAX_ENDURANCE_LEVEL:int = 350;
+		public const MAX_HARDINESS_LEVEL:int = 350;
+		public const MAX_SOULPURITY_LEVEL:int = 350;
+		public const MAX_INNERPOWER_LEVEL:int = 350;
+		public const MAX_FURY_LEVEL:int = 350;
+		public const MAX_KILLINGINTENT_LEVEL:int = 300;
+		public const MAX_BLOODLUST_LEVEL:int = 300;
+		public const MAX_MYSTICALITY_LEVEL:int = 30000;
+		public const MAX_SPIRITUALENLIGHTENMENT_LEVEL:int = 30000;
+		public const MAX_WISDOM_LEVEL:int = 500;
+		public const MAX_TRANSHUMANISM_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_STR_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_TOU_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_SPE_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_INT_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_WIS_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_LIB_LEVEL:int = 35000;
+		public const MAX_TRANSHUMANISM_SEN_LEVEL:int = 35000;
+		public const MAX_FORTUNE_LEVEL:int = 500;
+		public const MAX_VIRILITY_LEVEL:int = 10000;
+		public const MAX_FERTILITY_LEVEL:int = 10000;
+		public const MAX_MILK_FAUCET_LEVEL:int = 25000;
+		public const MAX_CUM_HOSE_LEVEL:int = 25000;
+		
+		// Goddess Stuff
+		public var temp_goddess_stats:GoddessStats;
 
 		private var specialCharacters:CharSpecial = new CharSpecial();
 		private var customPlayerProfile:Function;
@@ -492,6 +496,12 @@ import classes.Scenes.Combat.CombatAbility;
 			model.time.days = 0;
 			model.time.hours = 0;
 			model.time.minutes = 0;
+			
+			// Goddess Stuff
+			if (!player.hasPerk(PerkLib.Goddess) && player.hasPerk(PerkLib.NinetailsKitsuneOfBalance) && player.hasPerk(PerkLib.BloodlineDragon) && player.hasPerk(PerkLib.BloodlineKitsune)) {
+			
+				player.createPerk(PerkLib.Goddess, 0, 0, 0, 0);
+			}
 		}
 
 		private function chooseName():void {
@@ -537,7 +547,11 @@ import classes.Scenes.Combat.CombatAbility;
 			else { //Proceed with normal character creation
 				genericGenderChoice();
 			}
+			
+			
 		}
+		
+	
 
 		private function genericGenderChoice():void {
 			outputText("Are you a man or a woman?");
@@ -2120,15 +2134,15 @@ import classes.Scenes.Combat.CombatAbility;
 		private function maxRankValue():Number {
 			var maxV:Number = 0;
 			if (!player.hasPerk(PerkLib.AscensionMenuChoiceMaybe)) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 1) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 2) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 3) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 4) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 5) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 6) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 7) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 8) maxV += 5;
-			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 9) maxV += 5;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 1) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 2) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 3) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 4) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 5) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 6) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 7) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 8) maxV += 500;
+			if (flags[kFLAGS.NEW_GAME_PLUS_LEVEL] >= 9) maxV += 500;
 			return maxV;
 		}
 
@@ -3415,6 +3429,15 @@ import classes.Scenes.Combat.CombatAbility;
 			player.unequipMiscJewelry2(false, true);
 			player.unequipWeaponFlyingSwords(false, true);
 			player.createKeyItem("Ascension", 0, 0, 0, 0);
+			
+			// Goddess Stuff
+			temp_goddess_stats.real_body_size = player.goddess_stats.real_body_size;
+			temp_goddess_stats.real_breast_size = player.goddess_stats.real_breast_size;
+			temp_goddess_stats.real_cock_length = player.goddess_stats.real_cock_length;
+			temp_goddess_stats.real_cock_thickness = player.goddess_stats.real_cock_thickness;
+			temp_goddess_stats.real_lactation_vol = player.goddess_stats.real_lactation_vol;
+			temp_goddess_stats.real_cum_vol = player.goddess_stats.real_cum_vol;
+			
 			customPlayerProfile = null;
 			newGameGo();
 			removePerksThatShouldntBeFuckingPermanent();

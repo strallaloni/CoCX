@@ -1383,6 +1383,24 @@ public class PlayerEvents extends BaseContent implements TimeAwareInterface {
 
 		private function hourlyCheckEvents():Boolean {
 			var needNext:Boolean = false;
+			
+			//Update goddess stats
+			if (player.hasPerk(PerkLib.Goddess)) {
+				
+				if (player.biggestCockLength() > player.goddess_stats.real_cock_length)
+					player.goddess_stats.real_cock_length = player.biggestCockLength();
+				if (player.thickestCockThickness() > player.goddess_stats.real_cock_thickness)
+					player.goddess_stats.real_cock_thickness = player.thickestCockThickness();
+				if (player.goddess_stats.real_body_size < player.tallness)
+					player.goddess_stats.real_body_size = player.tallness;
+				if (player.cumQ() > player.goddess_stats.real_cum_vol)
+					player.goddess_stats.real_cum_vol = player.cumQ();
+				if (player.lactationQ() > player.goddess_stats.real_lactation_vol)
+					player.goddess_stats.real_lactation_vol = player.lactationQ();
+				
+				needNext = true;
+			}
+			
 			//Soul Sense
 			if (!player.hasPerk(PerkLib.SoulSense) && player.hasKeyItem("'Soul Sense and You' Manual") >= 0 && player.hasPerk(PerkLib.SoulPersonage)) {
 				outputText("\nDuring a casual walk around your camp you suddenly notice, or rather feel, something unexpected. Your surrounding blurs for a moment, to be replaced with a forest. You notice a goblin strolling nearby. Suddenly, she stops and slowly looks around, staring directly at you. A moment later, your vision of the forest becomes blurry, eventually fading away to be replaced by your camp and its surroundings. ");
