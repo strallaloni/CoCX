@@ -142,8 +142,8 @@ public class CampUpgrades extends BaseContent {
     }
 	
 	public function checkMaterialsCapNails():Number {
-		var cMC1:Number = 250;
-		if (flags[kFLAGS.MATERIALS_STORAGE_UPGRADES] >= 2) cMC1 += 750;
+		var cMC1:Number = 25000;
+		if (flags[kFLAGS.MATERIALS_STORAGE_UPGRADES] >= 2) cMC1 += 7500000;
 		return cMC1;
 	}
 	public function checkMaterialsCapWood():Number {

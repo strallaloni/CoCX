@@ -19,7 +19,8 @@ import classes.PerkClass;
 		{
 			super("Regeneration I", "Regeneration I",
 				"Regenerates 1% of max HP/hour and 0,5% of max HP/round.",
-				"You choose the 'Regeneration I' perk, allowing you to heal 0,5% of max HP every round of combat and 1% of max HP every hour!");
+				"You choose the 'Regeneration I' perk, allowing you to heal 0,5% of max HP every round of combat and 1% of max HP every hour!",
+				true);
 		}
 		
 	}

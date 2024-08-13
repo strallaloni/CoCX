@@ -1640,7 +1640,7 @@ public class PlayerInfo extends BaseContent {
 		if (player.level >= CoC.instance.levelCap) return;
 		player.level += 1; 
 		HPChange(player.maxHP(), false);
-		//if (player.level % 2 == 0) player.ascensionPerkPoints++;
+		if (player.level % 2 == 0) player.ascensionPerkPoints += 5000;
 		//przerobić aby z asc perk co ?6/3/1? lvl dostawać another perk point?
 		var gainedPerks:Number = 1;
 		//var gainedStats:Number = 5;
@@ -1856,8 +1856,8 @@ public class PlayerInfo extends BaseContent {
 		attributeMenu();
 	}
 	private function subtractAttribute(attribute:String):void {
-		var n:int=25;
-		if (shiftKeyDown) n = 75;
+		var n:int=20;
+		if (shiftKeyDown) n = 60;
 		switch (attribute) {
 			case "str":
 				if (player.tempStr < n) n = player.tempStr;

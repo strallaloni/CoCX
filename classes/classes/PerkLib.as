@@ -405,7 +405,8 @@ public class PerkLib
 				"You've chosen the 'Twin Thunder' perk. When using more than one weapon at once power attack/strike now delivers as many hits as used weapons.");
 		public static const Metabolization:PerkType = mk("Metabolization", "Metabolization",
 				"Increase the duration of lingering nourishment effects by 100% of base duration. And slows hunger progression if any(note does not raise racial scores).",
-				"You've chosen the 'Metabolization' perk. Increase the duration of lingering nourishment effects by 100% of base duration. And slows hunger progression if any(note does not raise racial scores).");
+				"You've chosen the 'Metabolization' perk. Increase the duration of lingering nourishment effects by 100% of base duration. And slows hunger progression if any(note does not raise racial scores).",
+				true);
 		public static const ImprovedMetabolization:PerkType = mk("Improved Metabolization", "Improved Metabolization",
 				"Increase the duration of lingering nourishment effects by an extra 100% of base duration. And slows hunger progression if any(note does not raise racial scores).",
 				"You've chosen the 'Improved Metabolization' perk. Increase the duration of lingering nourishment effects by an extra 100% of base duration. And slows hunger progression if any(note does not raise racial scores).");
@@ -423,7 +424,8 @@ public class PerkLib
 				"You've chosen the 'Penetrator' perk. Thrown weapons and firearms (+ mech weapons) ignore damage reductions piercing right through your opponent armor weak points (ignore enemy dmg red). (+5% range physical attacks multiplier)");
 		public static const UtilitySkillsBeginner:PerkType = mk("Utility Skills: Beginner", "Utility Skills: Beginner",
 				"Increasing mastery gains in non-combat skills by 100% of base and decreasing a bit req. exp to level up.",
-				"You've chosen the 'Utility Skills: Beginner' perk. Increasing mastery gains in non-combat skills by 100% of base and decreasing a bit req. exp to level up.");
+				"You've chosen the 'Utility Skills: Beginner' perk. Increasing mastery gains in non-combat skills by 100% of base and decreasing a bit req. exp to level up.",
+				true);
 		public static const UtilitySkillsApprentice:PerkType = mk("Utility Skills: Apprentice", "Utility Skills: Apprentice",
 				"Increasing mastery gains in non-combat skills by 200% of base and decreasing a bit req. exp to level up.",
 				"You've chosen the 'Utility Skills: Apprentice' perk. Increasing mastery gains in non-combat skills by 200% of base and decreasing a bit req. exp to level up");
@@ -466,7 +468,8 @@ public class PerkLib
 				"You've chosen the '' perk, .");*/
 		public static const Acclimation:PerkType = mk("Acclimation", "Acclimation",
 				"Reduces lust gain by 15%.",
-				"You've chosen the 'Acclimation' perk, making your body 15% more resistant to lust, up to a maximum of 75%.");
+				"You've chosen the 'Acclimation' perk, making your body 15% more resistant to lust, up to a maximum of 75%.",
+				true);
 		public static const Acolyte:PerkType = mk("Acolyte", "Acolyte",
 				"You carry that long pole with a lit flame on it... you no longer sleep during mass, so you know how to further decrease your minimum libido and boost lust resistance. (-2 min libido/+5% to lust resistance)",
 				"You've chosen the 'Acolyte' perk, lowering min libido by 2 and raise lust resistance by 5%.");
@@ -516,7 +519,8 @@ public class PerkLib
 				"You've chosen the 'Aerobatics' perk. You understand the properties of wind resistance and aerodynamics and how to optimize your situation in the air.");
 		public static const Agility:PerkType = mk("Agility", "Agility",
 				"Boosts physical defense or armor by a portion of your speed on light/medium armors.",
-				"You've chosen the 'Agility' perk, increasing the effectiveness (physical defense) of light/medium armor by a portion of your speed.");
+				"You've chosen the 'Agility' perk, increasing the effectiveness (physical defense) of light/medium armor by a portion of your speed.",
+				true);
 		public static const AlchemicalCartridge:PerkType = mk("Alchemical cartridge", "Alchemical cartridge",
 				"Add your intelligence to gun damage as a modifier. (+5% firearms attacks multiplier)",
 				"You've chosen the 'Alchemical cartridge' perk, adding intelligence scaling to firearms damage. (+5% firearms attacks multiplier)");
@@ -532,7 +536,8 @@ public class PerkLib
 				"You've chosen the 'Alpha and Omega' perk. Further increasing your specialization into a unique race and increasing racial skill power by an additionnal 75%.");
 		public static const Amateur:PerkType = mk("Amateur", "Amateur",
 				"You've just started out on your sex life. You don't know much, but you can tease well. (+15% tease dmg)",
-				"You've chosen the 'Amateur' perk, gaining +15% tease dmg.");
+				"You've chosen the 'Amateur' perk, gaining +15% tease dmg.",
+				true);
 		public static const AmateurGunslinger:PerkType = mk("Amateur Gunslinger", "Amateur Gunslinger",
 				"Gain an extra firearm attack per turn (2nd one). (+5% firearms attacks multiplier bonus)",
 				"You've chosen the 'Amateur Gunslinger' perk, gaining an extra firearm attack per turn. (+5% firearms attacks multiplier bonus)");
@@ -554,7 +559,8 @@ public class PerkLib
 				"You've chosen the 'Apprentice Golem Maker' perk, increasing your proficiency in making golems.");
 		public static const ArcanePoolI:PerkType = mk("Arcane Pool I", "Arcane Pool I",
 				"+3 extra mana per point of intelligence and wisdom.",
-				"You've chosen the 'Arcane Pool I' perk, granting +3 extra maximum mana for each point of intelligence and wisdom.")
+				"You've chosen the 'Arcane Pool I' perk, granting +3 extra maximum mana for each point of intelligence and wisdom.",
+				true)
 				.withBuffs({'maxmana_perint':+3,'maxmana_perwis':+3});
 		public static const ArcanePoolII:PerkType = mk("Arcane Pool II", "Arcane Pool II",
 				"+3 extra mana per point of intelligence and wisdom.",
@@ -603,7 +609,8 @@ public class PerkLib
 						"|" +
 						"<b>You are too dumb to gain benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Arcane Regeneration (Minor)' perk, increasing mana recovery and mana pool.");
+				"You've chosen the 'Arcane Regeneration (Minor)' perk, increasing mana recovery and mana pool.",
+				true);
 		public static const ArcaneRegenerationMythical:PerkType = mk("Arcane Regeneration (Mythical)", "Arcane Regeneration (Mythical)",
 				"[if (player.inte>=150)" +
 						"Increase by 50 base mana recovery and 25% max mana." +
@@ -722,7 +729,8 @@ public class PerkLib
 						"|" +
 						"<b>You aren't strong enough to benefit from this anymore.</b>" +
 						"]",
-				"You've chosen the 'Berserker' perk, which unlocks the 'Berserk' magical ability.  Berserking increases attack and lust resistance but reduces physical defenses.")
+				"You've chosen the 'Berserker' perk, which unlocks the 'Berserk' magical ability.  Berserking increases attack and lust resistance but reduces physical defenses.",
+				true)
 				.withBuffs({'maxwrath_base':+500});
 		public static const BiggerGolemBagI:PerkType = mk("Bigger Golem Bag I", "Bigger Golem Bag I",
 				"Your extra dimensional golem bag can store 6 more temporary (and 1 more permanent when becoming Master Golem Maker) golems.",
@@ -889,7 +897,8 @@ public class PerkLib
 				"You've chosen the 'Close to death' perk, increasing healing spells effect when below 25% max HP.");
 		public static const ColdBlooded:PerkType = mk("Cold Blooded", "Cold Blooded",
 				"Reduces minimum lust by up to 20%.",
-				"You've chosen the 'Cold Blooded' perk.  Thanks to increased control over your desires, your minimum lust is reduced!")
+				"You've chosen the 'Cold Blooded' perk.  Thanks to increased control over your desires, your minimum lust is reduced!",
+				true)
 				.withBuffs({'minlustx':-0.2});
 		public static const ColdAim:PerkType = mk("Cold Aim", "Cold Aim",
 				"Careful but Reckless Aim and Shooting no longer reduce your Toughness. (+10% range physical attacks multiplier)",
@@ -952,7 +961,8 @@ public class PerkLib
 				"You've chosen the 'Cupid' perk, allowing you to shoot arrows inflicting lust. (+20% range physical attacks multiplier)");
 		public static const CursedTag:PerkType = mk("Cursed Tag", "Cursed Tag",
 				"Through arcane study, you've begun to understand the magical working of your cursed tag, allowing you to improve your abilities by altering some of the unholy text. This allows you to add one power from a list of abilities.",
-				"You've chosen the 'Cursed Tag' perk. Through arcane study, you've begun to understand the magical working of your cursed tag, allowing you to improve your abilities by altering some of the unholy text. This allows you to add one power from a list of abilities.");
+				"You've chosen the 'Cursed Tag' perk. Through arcane study, you've begun to understand the magical working of your cursed tag, allowing you to improve your abilities by altering some of the unholy text. This allows you to add one power from a list of abilities.",
+				true);
 		public static const CycloneStage1:PerkType = mk("Cyclone (Stage 1)", "Cyclone (Stage 1)",
 				"Increasing the critical chance for aoe like whirlwind by 10%.",
 				"You've chosen the 'Cyclone (Stage 1)' perk, increasing the critical chance for aoe specials like whirlwind.");
@@ -1022,7 +1032,8 @@ public class PerkLib
 				"You've chosen the 'Defensive Staff Channeling' perk. When you would cast defensive spell holding staff it effects would be increased a bit (higher defensive effect or longer duration).");
 		public static const DemonicDesireI:PerkType = mk("Demonic Desire I", "Demonic Desire I",
 				"Raises max lust by 5% of base value.",
-				"You've chosen the 'Demonic Desire I' perk, giving you an additional 5% of base value to max lust!")
+				"You've chosen the 'Demonic Desire I' perk, giving you an additional 5% of base value to max lust!",
+				true)
 				.withBuffs({'maxlust_mult':+0.05});
 		public static const DemonicDesireII:PerkType = mk("Demonic Desire II", "Demonic Desire II",
 				"Raises max lust by 5% of base value.",
@@ -1046,13 +1057,15 @@ public class PerkLib
 				.withBuffs({'maxlust_mult':+0.05});
 		public static const Desensitization:PerkType = mk("Desensitization", "Desensitization",
 				"Negative effects of sensitivity are reduced by 5%.",
-				"You've chosen the 'Desensitization' perk, decreasing negative effects of sensitivity by 5%.");
+				"You've chosen the 'Desensitization' perk, decreasing negative effects of sensitivity by 5%.",
+				true);
 		public static const DevastatingCharge:PerkType = mk("Devastating charge", "Devastating charge",
 				"When using the charge action you have a 20% chance to stun the opponent for a round. Charge is 50% more powerful.",
 				"You've chosen the 'Devastating charge' perk. When using the charge action, you have a 20% chance to stun the opponent for a round. Charge is 50% more powerful.");
 		public static const Diehard:PerkType = mk("Diehard", "Diehard",
 				"You can't lose by HP until your health drops into the negatives any more than 2% of max HP + 600(scalable). When below 0 HP would lose 1% of max HP per turn.",
-				"You've chosen the 'Diehard' perk, allowing you to contiue fight even when below 0 HP.");
+				"You've chosen the 'Diehard' perk, allowing you to contiue fight even when below 0 HP.",
+				true);
 		public static const DivineArmament:PerkType = mk("Divine armament", "Divine armament",
 				"Charge melee weapon/range weapon/armor spell power is doubled and works at full power even when using heavy armor. If wearing a robe, PC gains a bonus to armor equal to 1/3 of its level. Staves wielded without a shield can now be used to block (10%) and gain a tripled base damage value on physical attacks.",
 				"You've chosen the 'Divine armament' perk. Charge melee weapon/range weapon/armor spell power is doubled and works at full power even when using heavy armor. If wearing a robe, PC gains a bonus to armor equal to 1/3 of its level. Staves wielded without a shield can now be used to block (10%) and gain a tripled base damage value on physical attacks.");
@@ -1064,7 +1077,8 @@ public class PerkLib
 				"You've chosen the 'Doctor' perk, increasing HP gains by 20%.");
 		public static const DualWield:PerkType = mk("Dual Wield", "Dual Wield",
 				"Allows you to wield two weapons.",
-				"You've chosen the 'Dual Wield' perk, training the skill of using two weapons.");
+				"You've chosen the 'Dual Wield' perk, training the skill of using two weapons.",
+				true);
 		public static const DualWieldFirearms:PerkType = mk("Dual Wield (Firearms)", "Dual Wield (Firearms)",
 				"Allows you to wield two firearms (non 2H ones) more effectively. (damage and accuracy penalties decreased by 20% and 10%)",
 				"You've chosen the 'Dual Wield (Firearms)' perk, training the skill of using two firearms (non 2H ones). (damage and accuracy penalties decreased by 20% and 10%)");
@@ -1242,7 +1256,8 @@ public class PerkLib
 				"You've chosen the 'Empowered Aria' perk, When initiating a song start as if having empowered your Aria 3 times. The aria can now be empowered up to twice as many times and increases at twice the rate.");
 		public static const EnableCriticals:PerkType = mk("Enable Criticals", "Enable Criticals",
 				"You now score crits on all naturaly immune to them enemies like constructs, goo or plants.",
-				"You've chosen the 'Enable Criticals' perk, allowing you to get crits on enemies normally immune to criticals.");
+				"You've chosen the 'Enable Criticals' perk, allowing you to get crits on enemies normally immune to criticals.",
+				true);
 		public static const Enchantment:PerkType = mk("Enchantment", "Enchantment",
 				"Using your arcane knowledge associated with alchemy,  you enchant each item to further power its effects +2% alchemy/mutagen boost.",
 				"You've chosen the 'Enchantment' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
@@ -1255,7 +1270,8 @@ public class PerkLib
 				"You've chosen the 'Engineer's Friend' perk, gaining +10% range phys dmg.");
 		public static const Enhancement:PerkType = mk("Enhancement", "Enhancement",
 				"Using your knowledge of alchemy, you've found a way to enhance the effects of transformatives +2% alchemy/mutagen boost.",
-				"You've chosen the 'Enhancement' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Enhancement' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const EnvenomedBolt:PerkType = mk("Envenomed Bolt", "Envenomed Bolt",
 				"By carefully collecting your venom you can apply poison to your arrows and bolts.",
 				"You've chosen the 'Envenomed Bolt' perk, allowing you to apply your own venom to arrows and bolts.");
@@ -1331,13 +1347,15 @@ public class PerkLib
 				"You've chosen the 'Eromancy (Master)' perk, granting +6 extra maximum mana for each point of intelligence and +2 extra maximum fatigue for each point of libido, tease exp for use of Arouse spell or m. specials dealing lust dmg.");
 		public static const Escort:PerkType = mk("Escort", "Escort",
 				"You've gotten so good you can now charge people money for having sex with you. There's many tricks you learned, increasing your tease damage by 15%.",
-				"You've chosen the 'Escort' perk, gaining +15% tease dmg.");
+				"You've chosen the 'Escort' perk, gaining +15% tease dmg.",
+				true);
 		public static const EternalyLastingBuffs:PerkType = mk("(Eternaly) Lasting Buffs", "(Eternaly) Lasting Buffs",
 				"Buff spells last another 5 turns longer at another 2x increase of their costs.",
 				"You've chosen the '(Eternaly) Lasting Buffs' perk. Your mastery over buffs has reached (eternaly) lasting level. (+5 turns duration and increasing cost 2x)");
 		public static const Evade:PerkType = mk("Evade", "Evade",
 				"Increases chances of evading enemy attacks. (+5% to evasion)",
-				"You've chosen the 'Evade' perk, allowing you to avoid enemy attacks more often! (+5% to evasion)");
+				"You've chosen the 'Evade' perk, allowing you to avoid enemy attacks more often! (+5% to evasion)",
+				true);
 		public static const EverLastingBuffs:PerkType = mk("(Ever)Lasting Buffs", "(Ever)Lasting Buffs",
 				"Buff spells last 5 turns longer at the double of normal costs.",
 				"You've chosen the '(Ever)Lasting Buffs' perk. Your mastery over buffs has reached (ever)lasting level. (+5 turns duration and increasing cost 2x)");
@@ -1358,7 +1376,8 @@ public class PerkLib
 				"You've chosen the 'Extremely Lucky' perk, increasing gem gains from victories by 15%.");
 		public static const EyesOfTheHunterAdept:PerkType = mk("Eyes of the Hunter (Adept)", "Eyes of the Hunter (Adept)",
 				"You to deal 10% damage and have a 5% higher critical chance against Huge, Groups, Beast or Animal-morph, Construct, Feral, Goo, True Demon type enemies. (req. 50+ sensitivity). +1 exploration reveal.",
-				"You've chosen the 'Eyes of the Hunter (Adept)' perk, allowing you to deal 10% damage and have a 5% higher critical chance against Huge, Groups, Beast or Animal-morph, Construct, Feral, Goo, True Demon type enemies. +1 exploration reveal.");
+				"You've chosen the 'Eyes of the Hunter (Adept)' perk, allowing you to deal 10% damage and have a 5% higher critical chance against Huge, Groups, Beast or Animal-morph, Construct, Feral, Goo, True Demon type enemies. +1 exploration reveal.",
+				true);
 		public static const EyesOfTheHunterExpert:PerkType = mk("Eyes of the Hunter (Expert)", "Eyes of the Hunter (Expert)",
 				"You to deal 10% damage and have a 5% higher critical chance against Giant, Large Groups, Elemental, Ghost, Plant, Fire/Ice/Lightning/Darkness Vulnerability type enemies (req. 75+ sensitivity). +1 exploration reveal.",
 				"You've chosen the 'Eyes of the Hunter (Expert)' perk, allowing you to deal 10% damage and have a 5% higher critical chance against Giant, Large Groups, Elemental, Ghost, Plant, Fire/Ice/Lightning/Darkness Vulnerability type enemies. +1 exploration reveal.");
@@ -1370,7 +1389,8 @@ public class PerkLib
 				"You've chosen the 'Eyes of the Hunter (Master)' perk, allowing you to deal 10% damage and have a 5% higher critical chance against Colossal, Flesh Construct, God, Boss, Fire/Ice/Lightning/Darkness Nature type enemies. +1 exploration reveal.");
 		public static const EyesOfTheHunterNovice:PerkType = mk("Eyes of the Hunter (Novice)", "Eyes of the Hunter (Novice)",
 				"Allow see few more than usual infomations about the enemy (req. 25+ sensitivity). +1 exploration reveal.",
-				"You've chosen the 'Eyes of the Hunter (Novice)' perk, allowing you to gain more information about the enemies you fight. +1 exploration reveal.");
+				"You've chosen the 'Eyes of the Hunter (Novice)' perk, allowing you to gain more information about the enemies you fight. +1 exploration reveal.",
+				true);
 		public static const EyesOfTheHunterEx:PerkType = mk("Eyes of the Hunter (Ex)", "Eyes of the Hunter (Ex)",
 				"Allowing you to be able to fight much higher level enemies than you as long your sensitivtiy is high enough, allows to find new areas at lower than normaly level. (increase by 1 lvl (up to 30) per 25 sensitivity cap on lvl diff after which attacks deal 1 dmg to enemy). +1 exploration reveal.",
 				"You've chosen the 'Eyes of the Hunter (Ex)' perk, allowing you to be able to fight much higher level enemies than you as long your sensitivtiy is high enough, allows to find new areas at lower than normaly level. (increase by 1 lvl (up to 30) per 25 sensitivity cap on lvl diff after which attacks deal 1 dmg to enemy). +1 exploration reveal.");
@@ -1389,7 +1409,8 @@ public class PerkLib
 				"You've chosen the 'Fertility-' perk, making it harder to get pregnant.  It also decreases your cum volume by up to 30% (if appropriate)!");
 		public static const FertilityPlus:PerkType = mk("Fertility+", "Fertility+",
 				"Increases fertility rating by 15 and cum volume by up to 50%.",
-				"You've chosen the 'Fertility+' perk, making it easier to get pregnant.  It also increases your cum volume by up to 50% (if appropriate)!");
+				"You've chosen the 'Fertility+' perk, making it easier to get pregnant.  It also increases your cum volume by up to 50% (if appropriate)!",
+				true);
 		public static const FirearmsAttackMultiplier:PerkType = mk("Firearms Attack Multiplier", "Skilled Gunslinger",
 				"+5% firearms attacks multiplier bonus and then adds 50% on top of final result.",
 				"You've chosen the 'Firearms Attack Multiplier' perk. +5% firearms attacks multiplier bonus and then adds 50% on top of final result.");
@@ -1593,7 +1614,8 @@ public class PerkLib
 				.withBuffs({'maxwrath_base':+400});
 		public static const GreaterCursedTag:PerkType = mk("Greater Cursed Tag", "Greater Cursed Tag",
 				"You benefit from all undead powers at all times.",
-				"You've chosen the 'Cursed Tag' perk. You benefit from all undead powers at all times.");
+				"You've chosen the 'Cursed Tag' perk. You benefit from all undead powers at all times.",
+				true);
 		public static const GreaterDesensitization:PerkType = mk("Greater Desensitization", "Greater Desensitization",
 				"Negative effects of sensitivity are reduced by 10%.",
 				"You've chosen the 'Greater Desensitization' perk, decreasing negative effects of sensitivity by 10%.");
@@ -1647,7 +1669,8 @@ public class PerkLib
 				.withBuffs({'maxlust_base':+20});
 		public static const GreyMagic:PerkType = mk("Grey Magic", "Grey Magic",
 				"Access to learn and cast grey magic spells. (+30 to max lust)",
-				"You've chosen the 'Grey Magic' perk, gaining access to grey spells. (+30 to max lust)")
+				"You've chosen the 'Grey Magic' perk, gaining access to grey spells. (+30 to max lust)",
+				true)
 				.withBuffs({'maxlust_base':+30});
 		public static const HeavyArmorProficiency:PerkType = mk("Heavy Armor Proficiency", "Heavy Armor Proficiency",
 				"Wearing Heavy Armor's grants 10% damage reduction.",
@@ -1830,11 +1853,13 @@ public class PerkLib
 				"You've chosen the 'Hold With Both Hands' perk.  As long as you're wielding a melee weapon using both hands, you gain a 50% base modifier to damage. For dual wield it can only apply if PC wield both weapons using two hands per weapon.");
 		public static const HotBlooded:PerkType = mk("Hot Blooded", "Hot Blooded",
 				"Raises minimum lust by 20%.",
-				"You've chosen the 'Hot Blooded' perk.  As a result of your enhanced libido, your lust no longer drops below 20%!")
+				"You've chosen the 'Hot Blooded' perk.  As a result of your enhanced libido, your lust no longer drops below 20%!",
+				true)
 				.withBuffs({'minlustx':0.2});
 		public static const HotNCold:PerkType = mk("Hot N Cold", "Hot N Cold",
 				"You're Hot N Cold and can't cross 75% minimum lust threshold.",
-				"You've chosen the 'Hot N Cold' perk, causing your minimum lust never cross 75% threshold.");
+				"You've chosen the 'Hot N Cold' perk, causing your minimum lust never cross 75% threshold.",
+				true);
 		public static const HowlingGale:PerkType = mk("Howling Gale", "Howling Gale",
 				"Cumulative 40% damage increase for every subsequent wind spell. Each turn without cast wind spell lower damage by 40% down to normal (100%) damage. Maximum 5 stacks.",
 				"You've chosen the 'Howling Gale' perk. Cumulative 40% damage increase for every subsequent wind spell. Each turn without cast wind spell lower damage by 40% down to normal (100%) damage. Maximum 5 stacks.");
@@ -1872,7 +1897,8 @@ public class PerkLib
 				.withBuffs({'maxwrath_base':+200});
 		public static const ImprovedCursedTag:PerkType = mk("Improved Cursed Tag", "Improved Cursed Tag",
 				"You may keep 2 undead powers active at all times.",
-				"You've chosen the 'Cursed Tag' perk. You may keep 2 undead powers active at all times.");
+				"You've chosen the 'Cursed Tag' perk. You may keep 2 undead powers active at all times.",
+				true);
 		public static const ImprovedDiehard:PerkType = mk("Improved Diehard", "Improved Diehard",
 				"You can't lose by HP until your health drops into the negatives any more than 4% of max HP + 1200(scalable). HP limit cumulative with other Diehard perks.",
 				"You've chosen the 'Improved Diehard' perk, increasing the limit on how long you can fight.");
@@ -1916,7 +1942,8 @@ public class PerkLib
 				.withBuffs({'maxsf_mult':+0.1});
 		public static const InhumanDesireI:PerkType = mk("Inhuman Desire I", "Inhuman Desire I",
 				"+3 extra LP per point of libido.",
-				"You've chosen the 'Inhuman Desire I' perk, granting an extra +3 to maximum LP for each point of libido.")
+				"You've chosen the 'Inhuman Desire I' perk, granting an extra +3 to maximum LP for each point of libido.",
+				true)
 				.withBuffs({'maxlust_perlib':+3});
 		public static const InhumanDesireII:PerkType = mk("Inhuman Desire II", "Inhuman Desire II",
 				"+3 extra LP per point of libido.",
@@ -2001,16 +2028,20 @@ public class PerkLib
 				"You've chosen the 'Iron Fists VI' perk, to again make your first tougher. This increases attack power again for 10. (+10% melee physical attacks multiplier)");
 		public static const IronMan:PerkType = mk("Iron Man", "Iron Man",
 				"Reduces the fatigue cost of physical specials by 50%.",
-				"You've chosen the 'Iron Man' perk, reducing the fatigue cost of physical special attacks by 50%");
+				"You've chosen the 'Iron Man' perk, reducing the fatigue cost of physical special attacks by 50%",
+				true);
 		public static const IronStomach:PerkType = mk("Iron Stomach", "Iron Stomach",
 				"Increase max Satiety by 50 and limit when PC gain weight from eating too much by 5.",
-				"You've chosen the 'Iron Stomach' perk, increasing your limit for eating without getting fat.");
+				"You've chosen the 'Iron Stomach' perk, increasing your limit for eating without getting fat.",
+				true);
 		public static const IronStomachEx:PerkType = mk("Iron Stomach (Ex)", "Iron Stomach (Ex)",
 				"Increase max Satiety by 100 and limit when PC gain weight from eating too much by another 10.",
-				"You've chosen the 'Iron Stomach (Ex)' perk, getting second increase to maximum amount of food you can eat before you start to getting fat.");
+				"You've chosen the 'Iron Stomach (Ex)' perk, getting second increase to maximum amount of food you can eat before you start to getting fat.",
+				true);
 		public static const IronStomachSu:PerkType = mk("Iron Stomach (Su)", "Iron Stomach (Su)",
 				"Increase max Satiety by 200, limit when PC gain weight from eating too much by another 15.",
-				"You've chosen the 'Iron Stomach (Su)' perk, making yourself capable of eating more without getting overweight.").withBuffs({'tou.mult':0.05});
+				"You've chosen the 'Iron Stomach (Su)' perk, making yourself capable of eating more without getting overweight.",
+				true).withBuffs({'tou.mult':0.05});
 		/*public static const IronStomach:PerkType = mk("Iron Stomach", "Iron Stomach",
 				"Reduces the fatigue cost of physical specials by 50%.",
 				"You've chosen the 'Iron Stomach' perk, reducing the fatigue cost of physical special attacks by 50%");*/
@@ -2185,7 +2216,8 @@ public class PerkLib
 						"|" +
 						"<b>You are too slow to benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Lunging Attacks' perk, granting 50% armor penetration for standard attacks.");
+				"You've chosen the 'Lunging Attacks' perk, granting 50% armor penetration for standard attacks.",
+				true);
 		public static const LyingDown:PerkType = mk("Lying Down", "Lying Down",
 				"Sample Text Here/+20% fatigue recovery rate",
 				"You've chosen the 'Lying Down' perk, gaining +20% fatigue recovery rate.");
@@ -2278,7 +2310,8 @@ public class PerkLib
 				"You've chosen the 'Melee Weapons Attack Multiplier' perk. +5% melee physical attacks multiplier and then adds 50% on top of final result.");
 		public static const MeleeWeaponsMastery:PerkType = mk("Melee Weapons Mastery", "Melee Weapons Mastery",
 				"Decrease by ~20% needed exp to level up each melee weapon mastery type and grants 200% more of base mastery exp gains.",
-				"You've chosen the 'Melee Weapons Mastery' perk. Decrease by ~20% needed exp to level up each melee weapon mastery type and grants 200% more of base mastery exp gains.");
+				"You've chosen the 'Melee Weapons Mastery' perk. Decrease by ~20% needed exp to level up each melee weapon mastery type and grants 200% more of base mastery exp gains.",
+				true);
 		public static const MeleeWeaponsMasteryEx:PerkType = mk("Melee Weapons Mastery (Ex)", "Melee Weapons Mastery (Ex)",
 				"Decrease by ~45% needed exp to level up each melee weapon mastery type and double mastery gains on crit hits (2x -> 4x).",
 				"You've chosen the 'Melee Weapons Mastery (Ex)' perk. Decrease by ~45% needed exp to level up each melee weapon mastery type and double mastery gains on crit hits (2x -> 4x).");
@@ -2450,7 +2483,8 @@ public class PerkLib
 				"You've chosen the 'Nurse' perk, increasing HP gains by 20%.");
 		public static const Nymphomania:PerkType = mk("Nymphomania", "Nymphomania",
 				"Raises minimum lust by up to 15%.",
-				"You've chosen the 'Nymphomania' perk.  Due to the incredible amount of corruption you've been exposed to, you've begun to live in a state of minor constant arousal.  Your minimum lust will be increased by 15%.").withBuffs({'minlustx':0.15});
+				"You've chosen the 'Nymphomania' perk.  Due to the incredible amount of corruption you've been exposed to, you've begun to live in a state of minor constant arousal.  Your minimum lust will be increased by 15%.",
+				true).withBuffs({'minlustx':0.15});
 		public static const OffensiveStaffChanneling:PerkType = mk("Offensive Staff Channeling", "Offensive Staff Channeling",
 				"Allows you to cast splited offensive spell without increased mana cost when using staff (3 parts at 70% power) or partial staff (2 parts at 80% power) as focus. (If you already can multicast spells, the perk will make your ability slightly stronger when using a staff.)",
 				"You've chosen the 'Offensive Staff Channeling' perk. Allows you to cast splited offensive spell without increased mana cost when using staff (3 parts at 70% power) or partial staff (2 parts at 80% power) as focus. (Effect will not activate if you already have ways to multicast spells at reduced power)");
@@ -2466,7 +2500,8 @@ public class PerkLib
 						"|" +
 						"<b>You are not fast enough to gain benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Parry' perk, giving you a chance to deflect blows with your weapon. (Speed-based).");
+				"You've chosen the 'Parry' perk, giving you a chance to deflect blows with your weapon. (Speed-based).",
+				true);
 		public static const Pastor:PerkType = mk("Pastor", "Pastor",
 				"Congratulations! You went from sleeping during the sermon, to being the putting people to sleep with sermons! The sheer devotion to your faith lowers you minimum libido and boost lust resistance. (-2 min libido/+5% to lust resistance)",
 				"You've chosen the 'Pastor' perk, lowering min libido by 2 and raise lust resistance by 5%.");
@@ -2576,7 +2611,8 @@ public class PerkLib
 				.withBuffs({'maxmana_mult':+0.1});
 		public static const Prostitute:PerkType = mk("Prostitute", "Prostitute",
 				"It's official, everyone knows to go to you for sex. You're still new to the business, but you learned some new tricks. (+15% tease dmg)",
-				"You've chosen the 'Prostitute' perk, gaining +15% tease dmg.");
+				"You've chosen the 'Prostitute' perk, gaining +15% tease dmg.",
+				true);
 		public static const PureMagic:PerkType = mk("Pure magic", "Pure magic",
 				"Your spells gain aligned damage, dealing more damage against the corrupt. Buff spells now last for the battle duration.",
 				"You've chosen the 'Pure magic' perk. Your spells gain aligned damage, dealing more damage against the corrupt. Buff spells now last for the battle duration.");
@@ -2609,7 +2645,8 @@ public class PerkLib
 				"You've chosen the 'Range Weapons Attack Multiplier' perk. +5% range physical attacks multiplier and then adds 50% on top of final result.");
 		public static const RangeWeaponsMastery:PerkType = mk("Range Weapons Mastery", "Range Weapons Mastery",
 				"Decrease by ~20% needed exp to level up each range weapon mastery type and grants 200% more of base mastery exp gains.",
-				"You've chosen the 'Range Weapons Mastery' perk. Decrease by ~20% needed exp to level up each range weapon mastery type and grants 200% more of base mastery exp gains.");
+				"You've chosen the 'Range Weapons Mastery' perk. Decrease by ~20% needed exp to level up each range weapon mastery type and grants 200% more of base mastery exp gains.",
+				true);
 		public static const RangeWeaponsMasteryEx:PerkType = mk("Range Weapons Mastery (Ex)", "Range Weapons Mastery (Ex)",
 				"Decrease by ~45% needed exp to level up each range weapon mastery type and double mastery gains on crit hits (2x -> 4x).",
 				"You've chosen the 'Range Weapons Mastery (Ex)' perk. Decrease by ~45% needed exp to level up each range weapon mastery type and double mastery gains on crit hits (2x -> 4x).");
@@ -2625,7 +2662,8 @@ public class PerkLib
 				"You've chosen the 'Recovery mantra' perk, increasing soulforce recovery rate by 2% of your total soulforce.");
 		public static const RecuperationSleep:PerkType = mk("Recuperation Sleep", "Recuperation Sleep",
 				"Gain +100% boost to health and fatigue recovery during sleep.",
-				"You've chosen the 'Recuperation Sleep' perk, boosting your health and fatigue recovery rate while sleeping!");
+				"You've chosen the 'Recuperation Sleep' perk, boosting your health and fatigue recovery rate while sleeping!",
+				true);
 		public static const RefinedBodyI:PerkType = mk("Refined Body I", "Refined Body I",
 				"Raises max HP by 5% of base value.",
 				"You've chosen the 'Refined Body I' perk, giving you an additional 5% to base HP!");
@@ -2658,7 +2696,8 @@ public class PerkLib
 				"You've chosen the 'Rejuvenation Sleep' perk, boosting your health and fatigue recovery rate while sleeping!");
 		public static const ResistanceI:PerkType = mk("Resistance I", "Resistance I",
 				"Reduces lust gain by 5%.",
-				"You've chosen the 'Resistance I' perk, reducing the rate at which your lust increases by 5%.");
+				"You've chosen the 'Resistance I' perk, reducing the rate at which your lust increases by 5%.",
+				true);
 		public static const ResistanceII:PerkType = mk("Resistance II", "Resistance II",
 				"Reduces lust gain by 5%.",
 				"You've chosen the 'Resistance II' perk, reducing the rate at which your lust increases by 5%.");
@@ -2692,7 +2731,8 @@ public class PerkLib
 				"You've chosen the 'Rumbling Quake (Su)' perk. Prevent decay of cumulative damage increase bonus when channeling earth based attack. Penalty for turn without casted earth spell decreased by another 10%. Maximum 75 stacks.");
 		public static const Runner:PerkType = mk("Runner", "Runner",
 				"Increases chances of escaping combat.",
-				"You've chosen the 'Runner' perk, increasing your chances to escape from your foes when fleeing!");
+				"You've chosen the 'Runner' perk, increasing your chances to escape from your foes when fleeing!",
+				true);
 		public static const Sadist:PerkType = mk("Sadist", "Sadist",
 				"Deal 20% more damage, but gain lust at the same time.",
 				"You've chosen the 'Sadist' perk, increasing damage by 20 percent but causing you to gain lust from dealing damage.");
@@ -2710,13 +2750,15 @@ public class PerkLib
 				"You've chosen the 'Saturation' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
 		public static const SecondRing:PerkType = mk("Second Ring", "Second Ring",
 				"Your basic understanding of magic pools allows you to equip second ring.",
-				"You've chosen the 'Second Ring' perk, reaching a basic understanding of magic pools to allow you equip second ring.");
+				"You've chosen the 'Second Ring' perk, reaching a basic understanding of magic pools to allow you equip second ring.",
+				true);
 		public static const SecondWind:PerkType = mk("Second Wind", "Second Wind",
 				"Using half remaining fatigue increase by 5% regeneration in combat for 10 turns.",
 				"You've chosen the 'Second Wind' perk, allowing you to once per fight increase for few turns natural regeneration at cost of some fatigue.");
 		public static const Seduction:PerkType = mk("Seduction", "Seduction",
 				"Upgrades your tease attack, making it more effective.",
-				"You've chosen the 'Seduction' perk, upgrading the 'tease' attack with a more powerful damage and a higher chance of success.");
+				"You've chosen the 'Seduction' perk, upgrading the 'tease' attack with a more powerful damage and a higher chance of success.",
+				true);		
 		public static const SelfbuffsProficiency:PerkType = mk("Selfbuffs Proficiency", "Selfbuffs Proficiency",
 				"Increase max selfbuff max cap by 30%.",
 				"You've chosen the 'Selfbuffs Proficiency' perk. Increase max selfbuff max cap by 30%.");
@@ -2822,16 +2864,19 @@ public class PerkLib
 				.withBuffs({'maxsf_mult':+0.1});
 		public static const Spectre:PerkType = mk("Spectre", "Spectre",
 				"You have mastered dematerialization, so now you can use it to avoid incoming attacks (+10% to dodge chance) and slip from enemy grasp (you can try to possess during struggle, and even if not successfull you'll escape from constriction).",
-				"You've chosen the 'Spectre' perk. You have mastered dematerialization, so now you can use it to avoid incoming attacks (+10% to dodge chance) and slip from enemy grasp (you can try to possess during struggle, and even if not successfull you'll escape from constriction).");
+				"You've chosen the 'Spectre' perk. You have mastered dematerialization, so now you can use it to avoid incoming attacks (+10% to dodge chance) and slip from enemy grasp (you can try to possess during struggle, and even if not successfull you'll escape from constriction).",
+				true);
 		public static const SpeedDemon:PerkType = mk("Speed Demon", "Speed Demon",
 				"Add speed based scaling of melee attacks when using smaller than large weapon(s).",
 				"You've chosen the 'Speed Demon' perk, allowing you to use your speed when attacking with smaller than large melee weapons.");
 		public static const SpeedyRecovery:PerkType = mk("Speedy Recovery", "Speedy Recovery",
 				"Regain fatigue +50% faster.",
-				"You've chosen the 'Speedy Recovery' perk, boosting your fatigue recovery rate!");
+				"You've chosen the 'Speedy Recovery' perk, boosting your fatigue recovery rate!",
+				true);
 		public static const SpeedyRecuperation:PerkType = mk("Speedy Recuperation", "Speedy Recuperation",
 				"Regain fatigue +100% faster.",
-				"You've chosen the 'Speedy Recuperation' perk, boosting your fatigue recovery rate!");
+				"You've chosen the 'Speedy Recuperation' perk, boosting your fatigue recovery rate!",
+				true);
 		public static const SpeedyRejuvenation:PerkType = mk("Speedy Rejuvenation", "Speedy Rejuvenation",
 				"Regain fatigue +200% faster.",
 				"You've chosen the 'Speedy Rejuvenation' perk, boosting your fatigue recovery rate!");
@@ -2982,7 +3027,8 @@ public class PerkLib
 						"|" +
 						"<b>You are too dumb to gain any benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Tactician' perk, increasing physical critical hit chance by up to 10% (Intelligence-based).");
+				"You've chosen the 'Tactician' perk, increasing physical critical hit chance by up to 10% (Intelligence-based).",
+				true);
 		public static const TaintedMagazine:PerkType = mk("Tainted Magazine", "Tainted Magazine",
 				"Increases reload cost by 2 and doubles max ammo (200% of base ammo count). (+10% firearms attacks multiplier)",
 				"You've chosen the 'Tainted Magazine' perk. Increases reload cost by 2 and doubles max ammo (200% of base ammo count). (+10% firearms attacks multiplier)");
@@ -3721,7 +3767,8 @@ public class PerkLib
 		public static const ColdMastery:PerkType = mk("Cold Mastery", "Cold Mastery",
 				"You now have complete control over the ice element adding your own inner power to all cold based attacks.");
 		public static const CondensedPower:PerkType = mk("Condensed Power", "Condensed Power",
-				"While smaller than 6ft, add half of your inverted size modifier to your strength score.");
+				"While smaller than 6ft, add half of your inverted size modifier to your strength score.",
+				null, true);
 		public static const CorruptedKitsune:PerkType = mk("Corrupted Kitsune", "Corrupted Kitsune",
 				"The mystical energy of the kitsunes surges through you, filling you with phenomenal cosmic power!  Your boundless magic allows you to recover quickly after casting spells, but your method of attaining it has corrupted the transformation, preventing you from achieving true enlightenment.",null,true);
 		public static const CorruptedNinetails:PerkType = mk("Corrupted Nine-tails", "Corrupted Nine-tails",
@@ -3979,7 +4026,8 @@ public class PerkLib
 		public static const TitanicSize:PerkType = mk("Titan size", "Titan size",
 				"You are five times taller than your effective base size.");
 		public static const TitanicStrength:PerkType = mk("Titanic Strength", "Titanic Strength",
-				"While 10 ft tall or above ability increases total strength based on tallness up to 1% per 0.5 ft.");
+				"While 10 ft tall or above ability increases total strength based on tallness up to 1% per 0.5 ft.",
+				null, true);
 		public static const TransformationAcclimation:PerkType = mk("Transformation Acclimation", "Transformation Acclimation",
 				"Increases the likelihood of undergoing a transformation even if you have transformation resistance.");
 		public static const TransformationResistance:PerkType = mk("Transformation Resistance", "Transformation Resistance",

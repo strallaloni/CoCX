@@ -3,13 +3,20 @@ import classes.Creature;
 import classes.PerkLib;
 import classes.IMutations.IMutationsLib;
 
+import classes.GlobalFlags.kFLAGS;
+
 public class TrainingStat extends RawStat {
 	public function TrainingStat(host:Creature, name:String) {
 		super(host, name, {min:1, value: 0, max: 100});
 	}
 	
 	override public function get max():Number {
-		var train:Number = 100;
+		var train:Number = 1000000;
+		
+		if (host.hasPerk(PerkLib.Goddess))
+			train += 20000 * host.flags[kFLAGS.NEW_GAME_PLUS_LEVEL];
+		else
+			train += 10000 * host.flags[kFLAGS.NEW_GAME_PLUS_LEVEL];
 		//train += 2 * host.perkv1(PerkLib.AscensionTranshumanism);
 		if (host.hasPerk(PerkLib.MunchkinAtBioLab)) train += 10;
 		switch (statName) {
