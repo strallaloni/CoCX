@@ -1809,9 +1809,18 @@ public class PlayerInfo extends BaseContent {
 	}
 
 	private function addAttribute(attribute:String):void {
-		var n:int=20;
 		var m:int;
-		if (shiftKeyDown) n = 60;
+		var n:int;
+		if (player.newGamePlusMod() > 0)
+			n = 20 * player.newGamePlusMod() * 10;
+		else 
+			n = 20;
+		if (shiftKeyDown) {
+			if (player.newGamePlusMod() > 0) 
+				n = 60 * player.newGamePlusMod() * 10;
+			else 
+				n = 60;
+		}
 		if (n > player.statPoints) n = player.statPoints;
 		switch (attribute) {
 			case "str":
@@ -1856,8 +1865,17 @@ public class PlayerInfo extends BaseContent {
 		attributeMenu();
 	}
 	private function subtractAttribute(attribute:String):void {
-		var n:int=20;
-		if (shiftKeyDown) n = 60;
+		var n:int;
+		if (player.newGamePlusMod() > 0)
+			n = 20 * player.newGamePlusMod() * 10;
+		else 
+			n = 20;
+		if (shiftKeyDown) {
+			if (player.newGamePlusMod() > 0) 
+				n = 60 * player.newGamePlusMod() * 10;
+			else 
+				n = 60;
+		}
 		switch (attribute) {
 			case "str":
 				if (player.tempStr < n) n = player.tempStr;

@@ -406,12 +406,12 @@ public function startUrtaQuest():void {
 	player.vaginas[0].vaginalWetness = VaginaClass.WETNESS_DROOLING;
 	player.vaginas[0].vaginalLooseness = VaginaClass.LOOSENESS_NORMAL;
 	player.clitLength = 1;
-	player.strStat.core.value = 187;
-	player.touStat.core.value = 203;
-	player.speStat.core.value = 218;
-	player.intStat.core.value = 80;
-	player.wisStat.core.value = 70;
-	player.libStat.core.value = 120;
+	player.strStat.core.value = 1870;
+	player.touStat.core.value = 2030;
+	player.speStat.core.value = 2180;
+	player.intStat.core.value = 800;
+	player.wisStat.core.value = 700;
+	player.libStat.core.value = 1200;
 	player.sensStat.redefine({base:50});
 	player.cor = 30;
 	player.lust = 40;

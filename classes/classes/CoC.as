@@ -191,7 +191,7 @@ public class CoC extends MovieClip
      * NG+ level capped
      */
     public function newGamePlusMod():int {
-        return Utils.boundInt(0, newGamePlusLevel(), 5);
+        return Utils.boundInt(0, newGamePlusLevel(), 10);
     }
     public function newGamePlusFactor():Number {
         return 1 + newGamePlusMod();

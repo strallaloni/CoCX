@@ -1094,7 +1094,11 @@ public class Camp extends NPCAwareContent{
 			}
 		}
 		//if (CoC_Settings.debugBuild) addButton(14, "Cheats", testmenu.SoulforceCheats).hint("This should be obvious. ^^");
-
+		
+		// Goddess
+		if (player.hasPerk(PerkLib.Goddess))
+			addButton(14, "Goddess").hint("Use your godlike powers to mold your body even further.");
+		
 		//Remove buttons according to conditions.
 		if (isNightTime) {
 			if (model.time.hours >= 22 || model.time.hours < 6) {
