@@ -482,7 +482,8 @@ public class PerkLib
 				"You've chosen the 'Advanced Aerial Combat' perk, you trained to fight while in flight. (extend flight duration while using wings by 2 turns and increase evasion when flying by 5%)");
 		public static const AdvancedAerobatics:PerkType = mk("Advanced Aerobatics", "Advanced Aerobatics",
 				"You understand the properties of wind resistance and aerodynamics nearly perfectly. (increase accuracy to melee/range attacks by 50% when flying)",
-				"You've chosen the 'Advanced Aerobatics' perk. You understand the properties of wind resistance and aerodynamics nearly perfectly. (increase accuracy to melee/range attacks by 50% when flying)");
+				"You've chosen the 'Advanced Aerobatics' perk. You understand the properties of wind resistance and aerodynamics nearly perfectly. (increase accuracy to melee/range attacks by 50% when flying)",
+				true);
 		public static const AdvancedAllRounderEducation:PerkType = mk("Advanced All-Rounder Education", "All-Rounder Education ( Advanced )",
 				"Limit of advanced job you can learn is increased by 3.",
 				"You've chosen the 'All-Rounder Education ( Advanced )' perk, expanding the amount of advanced jobs you can learn. (+3)");
@@ -954,7 +955,8 @@ public class PerkLib
 				"You've chosen the 'Corrupt magic' perk. Your spells gain aligned damage, dealing more damage against the pure. Spells that drain health heals for twice as much while Dark Ritual is active.");
 		public static const Creationism:PerkType = mk("Creationism", "Creationism",
 				"You have surpassed the pinnacle of alchemy, placing yourself on the level of gods. By creating the perfect transformative, you have guaranteed its potent effects +2% alchemy/mutagen boost.",
-				"You've chosen the 'Creationism' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Creationism' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const CriticalPerformance:PerkType = mk("Critical performance", "Critical performance",
 				"Allows your non periodic tease damage to critically hit based on your libido, maximum +20%.",
 				"You've chosen the 'Critical performance' perk, allowing your non periodic tease damage to critically hit based on your libido.");
@@ -1267,7 +1269,8 @@ public class PerkLib
 				true);
 		public static const Enchantment:PerkType = mk("Enchantment", "Enchantment",
 				"Using your arcane knowledge associated with alchemy,  you enchant each item to further power its effects +2% alchemy/mutagen boost.",
-				"You've chosen the 'Enchantment' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Enchantment' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const EndlessRage:PerkType = mk("Endless Rage", "Endless Rage",
 				"Berzerker and Lustzerker cost change to 50 wrath per turn from set amount of turns. When Too Angry Too Die perk effect activate that cost change to 10%. Can reach Grade 4 of berserking state. (+10% melee physical attacks multiplier, 2x for been under berzerk type state and another 2x when using large or masive weapon(s))",
 				"You've chosen the 'Endless Rage' perk. Berzerker and Lustzerker cost change to 50 wrath per turn from set amount of turns. When Too Angry Too Die perk effect activate that cost change to 10%. Can reach Grade 4 of berserking state. (+10% melee physical attacks multiplier, 2x for been under berzerk type state and another 2x when using large or masive weapon(s))")
@@ -1477,7 +1480,8 @@ public class PerkLib
 				"You've chosen the 'Furnace' perk, increasing armor proficiency. (+5% phys/mag resistance)");
 		public static const Fusion:PerkType = mk("Fusion", "Fusion",
 				"Using your knowledge of alchemy and enhancement, you found a way to fuse two of the same item together, further enhacing transformative effects +2% alchemy/mutagen boost.",
-				"You've chosen the 'Fusion' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Fusion' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const GigantGrip:PerkType = mk("Gigant's Grip", "Gigant's Grip",
 				"Gain an ability to wield large weapons and massive shields in one hand. (+10% melee physical attacks multiplier)",
 				"You've chosen the 'Gigant's Grip' perk, gaining an ability to wield large weapons and massive shields in one hand. (+10% melee physical attacks multiplier)").withBuffs({'str.mult':0.5});
@@ -2170,7 +2174,8 @@ public class PerkLib
 				"You've chosen the 'Lifeline' perk, increasing your health recovery.");
 		public static const LiftOff:PerkType = mk("Lift Off", "Lift Off",
 				"Allows you to start combat already flying.",
-				"You've chosen the 'Lift Off' perk, allowing you to start combat already flying.");
+				"You've chosen the 'Lift Off' perk, allowing you to start combat already flying.",
+				true);
 		public static const LightningReload:PerkType = mk("Lightning Reload", "Lightning Reload",
 				"Allows you to reload in middle of shooting as long PC have enough fatigue for that without ending turn and decrease reload fatigue cost by 50%.",
 				"You've chosen the 'Lightning Reload' perk, lowering even more time needed to reload with ammo range weapons like pistols and decrease reload fatigue cost by 50%.")
@@ -2572,7 +2577,8 @@ public class PerkLib
 				"You've chosen the 'Perfect Defence Stance' perk, perfecting your defence pose beyond mastery level.");
 		public static const Perfection:PerkType = mk("Perfection", "Perfection",
 				"The ultimate stage of alchemy, you have perfected the art of making transformatives more effective. This is a level very few have reached +2% alchemy/mutagen boost.",
-				"You've chosen the 'Perfection' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Perfection' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const PerfectStrike:PerkType = mk("Perfect strike", "Perfect strike",
 				"When you strike (with puch/kick/soulblast) a stunned or frozen solid opponent you deal extra damage (50%). (+20% melee physical attacks multiplier)",
 				"You've chosen the 'Perfect strike' perk, allowing you to deal more damage to stunned or frozen enemies with punch/kick type soulskills. (+20% melee physical attacks multiplier)");
@@ -2728,7 +2734,8 @@ public class PerkLib
 				"You've chosen the 'Refined Body VI' perk, giving you an additional 5% to base HP!");
 		public static const Refinement:PerkType = mk("Refinement", "Refinement",
 				"Using your acquired knowledge, you refine each item to increase its effects on your body, further increasing the changes +2% alchemy/mutagen boost.",
-				"You've chosen the 'Refinement' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Refinement' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const Regeneration:RegenerationPerk = new RegenerationPerk();
 		public static const Regeneration2:Regeneration2Perk = new Regeneration2Perk();
 		public static const Regeneration3:Regeneration3Perk = new Regeneration3Perk();
@@ -2791,7 +2798,8 @@ public class PerkLib
 				"You've chosen the 'Saint of Zariman' perk. Add your speed to gun damage as a modifier, increase scaling of wisdom/intelligence bonus. (+15% firearms attacks multiplier)");
 		public static const Saturation:PerkType = mk("Saturation", "Saturation",
 				"Using your advanced knowledge, you soak each transformative in a special liquid to enhance their effects +2% alchemy/mutagen boost.",
-				"You've chosen the 'Saturation' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.");
+				"You've chosen the 'Saturation' perk, number of possible effects of transformatives +2% alchemy/mutagen boost.",
+				true);
 		public static const SecondRing:PerkType = mk("Second Ring", "Second Ring",
 				"Your basic understanding of magic pools allows you to equip second ring.",
 				"You've chosen the 'Second Ring' perk, reaching a basic understanding of magic pools to allow you equip second ring.",
