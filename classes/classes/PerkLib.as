@@ -341,19 +341,24 @@ public class PerkLib
 				"You've chosen the 'History Buff' perk. (+10% minions/pets damage)");
 		public static const HumanSupremacyAdvanced:PerkType = mk("Human Supremacy (Advanced)", "Human Supremacy (Advanced)",
 				"Delay by 1 point appearing effect of negative HP regeneration. (+1 to internal mutations slots capacity (+2 for adaptation slots))",
-				"You've chosen the 'Human Supremacy (Advanced)' perk. Delay by 1 point appearing effect of negative HP regeneration. (+1 to internal mutations slots capacity (+2 for adaptation slots))");
+				"You've chosen the 'Human Supremacy (Advanced)' perk. Delay by 1 point appearing effect of negative HP regeneration. (+1 to internal mutations slots capacity (+2 for adaptation slots))",
+				true);
 		public static const HumanSupremacyBasic:PerkType = mk("Human Supremacy (Basic)", "Human Supremacy (Basic)",
 				"Delay by 5 points appearing effect of negative HP regeneration. (+2 to human score)",
-				"You've chosen the 'Human Supremacy (Basic)' perk. Delay by 5 points appearing effect of negative HP regeneration. (+2 to human score)");
+				"You've chosen the 'Human Supremacy (Basic)' perk. Delay by 5 points appearing effect of negative HP regeneration. (+2 to human score)",
+				true);
 		public static const HumanSupremacyImproved:PerkType = mk("Human Supremacy (Improved)", "Human Supremacy (Improved)",
 				"Delay by 10 points appearing effect of negative HP regeneration. (+2 to human score)",
-				"You've chosen the 'Human Supremacy (Improved)' perk. Delay by 10 points appearing effect of negative HP regeneration. (+2 to human score)");
+				"You've chosen the 'Human Supremacy (Improved)' perk. Delay by 10 points appearing effect of negative HP regeneration. (+2 to human score)",
+				true);
 		public static const HumanSupremacyInitial:PerkType = mk("Human Supremacy (Initial)", "Human Supremacy (Initial)",
 				"Delay by 5 points appearing effect of negative HP regeneration. (+2 to human score)",
-				"You've chosen the 'Human Supremacy (Initial)' perk. Delay by 5 points appearing effect of negative HP regeneration. (+2 to human score)");
+				"You've chosen the 'Human Supremacy (Initial)' perk. Delay by 5 points appearing effect of negative HP regeneration. (+2 to human score)",
+				true);
 		public static const HumanSupremacySuperior:PerkType = mk("Human Supremacy (Superior)", "Human Supremacy (Superior)",
 				"Delay by 15 points appearing effect of negative HP regeneration. (+3 to human score)",
-				"You've chosen the 'Human Supremacy (Superior)' perk. Delay by 15 points appearing effect of negative HP regeneration. (+3 to human score)");
+				"You've chosen the 'Human Supremacy (Superior)' perk. Delay by 15 points appearing effect of negative HP regeneration. (+3 to human score)",
+				true);
 		public static const MattressActressActor:PerkType = mk("Mattress Actress/Actor", "Mattress Actress/Actor",
 				"You know just how they like it, every time. No need for words; just lay back and let the fantasy come to life. Don't worry, you'll take good care of them. +10% max lust, +5 to anal/vaginal capacity.",
 				"You've chosen the 'Mattress Actress/Actor' perk. +10% max lust, +5 to anal/vaginal capacity.")
@@ -590,7 +595,8 @@ public class PerkLib
 						"|" +
 						"<b>You are too dumb to gain benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Arcane Regeneration (Epic)' perk, increasing mana recovery and mana pool.");
+				"You've chosen the 'Arcane Regeneration (Epic)' perk, increasing mana recovery and mana pool.",
+				true);
 		public static const ArcaneRegenerationLegendary:PerkType = mk("Arcane Regeneration (Legendary)", "Arcane Regeneration (Legendary)",
 				"[if (player.inte>=125)" +
 						"Increase by 40 base mana recovery and 20% max mana." +
@@ -604,7 +610,8 @@ public class PerkLib
 						"|" +
 						"<b>You are too dumb to gain benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Arcane Regeneration (Major)' perk, increasing mana recovery and mana pool.");
+				"You've chosen the 'Arcane Regeneration (Major)' perk, increasing mana recovery and mana pool.",
+				true);
 		public static const ArcaneRegenerationMinor:PerkType = mk("Arcane Regeneration (Minor)", "Arcane Regeneration (Minor)",
 				"[if (player.inte>=50)" +
 						"Increase by 10 base mana recovery and 5% max mana." +
@@ -619,7 +626,8 @@ public class PerkLib
 						"|" +
 						"<b>You are too dumb to gain benefit from this perk.</b>" +
 						"]",
-				"You've chosen the 'Arcane Regeneration (Mythical)' perk, increasing mana recovery and mana pool.");
+				"You've chosen the 'Arcane Regeneration (Mythical)' perk, increasing mana recovery and mana pool.",
+				true);
 		public static const ArcaneShielding:PerkType = mk("Arcane Shielding", "Arcane Shielding",
 				"Improving by fivefold mana shield resistance to magical attacks. (1:5 ratio for mana to magic damage)",
 				"You've chosen the 'Arcane Shielding' perk, improving by fivefold mana shield resistance to magical attacks. (1:5 ratio for mana to magic damage)");
@@ -2287,27 +2295,33 @@ public class PerkLib
 				"You've chosen the 'Make it Double' perk, allowing you to make full use of dual weapons when using moves like whirlwind or whipping.");
 		public static const ManaAffinityI:PerkType = mk("Mana Affinity I", "Mana Affinity I",
 				"Raises max mana by 3% of base value and regain it 25% faster.",
-				"You've chosen the 'Mana Affinity I' perk, giving you an additional 3% of base value mana and boosting the recovery rate.")
+				"You've chosen the 'Mana Affinity I' perk, giving you an additional 3% of base value mana and boosting the recovery rate.",
+				true)
 				.withBuffs({'maxmana_mult':+0.03});
 		public static const ManaAffinityII:PerkType = mk("Mana Affinity II", "Mana Affinity II",
 				"Raises max mana by 3% of base value and regain it 25% faster.",
-				"You've chosen the 'Mana Affinity II' perk, giving you an additional 3% of base value mana and boosting the recovery rate.")
+				"You've chosen the 'Mana Affinity II' perk, giving you an additional 3% of base value mana and boosting the recovery rate.",
+				true)
 				.withBuffs({'maxmana_mult':+0.03});
 		public static const ManaAffinityIII:PerkType = mk("Mana Affinity III", "Mana Affinity III",
 				"Raises max mana by 3% of base value and regain it 25% faster.",
-				"You've chosen the 'Mana Affinity III' perk, giving you an additional 3% of base value mana and boosting the recovery rate.")
+				"You've chosen the 'Mana Affinity III' perk, giving you an additional 3% of base value mana and boosting the recovery rate.",
+				true)
 				.withBuffs({'maxmana_mult':+0.03});
 		public static const ManaAffinityIV:PerkType = mk("Mana Affinity IV", "Mana Affinity IV",
 				"Raises max mana by 3% of base value and regain it 25% faster.",
-				"You've chosen the 'Mana Affinity IV' perk, giving you an additional 3% of base value mana and boosting the recovery rate.")
+				"You've chosen the 'Mana Affinity IV' perk, giving you an additional 3% of base value mana and boosting the recovery rate.",
+				true)
 				.withBuffs({'maxmana_mult':+0.03});
 		public static const ManaAffinityV:PerkType = mk("Mana Affinity V", "Mana Affinity V",
 				"Raises max mana by 3% of base value and regain it 25% faster.",
-				"You've chosen the 'Mana Affinity V' perk, giving you an additional 3% of base value mana and boosting the recovery rate.")
+				"You've chosen the 'Mana Affinity V' perk, giving you an additional 3% of base value mana and boosting the recovery rate.",
+				true)
 				.withBuffs({'maxmana_mult':+0.03});
 		public static const ManaAffinityVI:PerkType = mk("Mana Affinity VI", "Mana Affinity VI",
 				"Raises max mana by 3% of base value and regain it 25% faster.",
-				"You've chosen the 'Mana Affinity VI' perk, giving you an additional 3% of base value mana and boosting the recovery rate.")
+				"You've chosen the 'Mana Affinity VI' perk, giving you an additional 3% of base value mana and boosting the recovery rate.",
+				true)
 				.withBuffs({'maxmana_mult':+0.03});
 		public static const ManaCore:PerkType = mk("Mana Core", "Mana Core",
 				"Increase max mana by 10% + (10% to 30%) (per each attained magical mastery stage) of base value.",
@@ -2751,19 +2765,24 @@ public class PerkLib
 				true);
 		public static const ResistanceII:PerkType = mk("Resistance II", "Resistance II",
 				"Reduces lust gain by 5%.",
-				"You've chosen the 'Resistance II' perk, reducing the rate at which your lust increases by 5%.");
+				"You've chosen the 'Resistance II' perk, reducing the rate at which your lust increases by 5%.",
+				true);
 		public static const ResistanceIII:PerkType = mk("Resistance III", "Resistance III",
 				"Reduces lust gain by 5%.",
-				"You've chosen the 'Resistance III' perk, reducing the rate at which your lust increases by 5%.");
+				"You've chosen the 'Resistance III' perk, reducing the rate at which your lust increases by 5%.",
+				true);
 		public static const ResistanceIV:PerkType = mk("Resistance IV", "Resistance IV",
 				"Reduces lust gain by 5%.",
-				"You've chosen the 'Resistance IV' perk, reducing the rate at which your lust increases by 5%.");
+				"You've chosen the 'Resistance IV' perk, reducing the rate at which your lust increases by 5%.",
+				true);
 		public static const ResistanceV:PerkType = mk("Resistance V", "Resistance V",
 				"Reduces lust gain by 5%.",
-				"You've chosen the 'Resistance V' perk, reducing the rate at which your lust increases by 5%.");
+				"You've chosen the 'Resistance V' perk, reducing the rate at which your lust increases by 5%.",
+				true);
 		public static const ResistanceVI:PerkType = mk("Resistance VI", "Resistance VI",
 				"Reduces lust gain by 5%.",
-				"You've chosen the 'Resistance VI' perk, reducing the rate at which your lust increases by 5%.");
+				"You've chosen the 'Resistance VI' perk, reducing the rate at which your lust increases by 5%.",
+				true);
 		public static const Resolute:PerkType = mk("Resolute", "Resolute",
 				"[if(player.tou>=75)" +
 						"Grants immunity to stuns and some statuses.</b>" +
@@ -3349,7 +3368,8 @@ public class PerkLib
 				"You've chosen the 'Weapon Mastery' perk, getting one and half of the effectiveness of large weapons.").withBuffs({'str.mult':0.05});
 		public static const WellAdjusted:PerkType = mk("Well Adjusted", "Well Adjusted",
 				"You gain half as much lust as time passes in Mareth.",
-				"You've chosen the 'Well Adjusted' perk, reducing the amount of lust you naturally gain over time while in this strange land!");
+				"You've chosen the 'Well Adjusted' perk, reducing the amount of lust you naturally gain over time while in this strange land!",
+				true);
 		public static const Whipping:PerkType = mk("Whipping", "Whipping",
 				"Whipping special deal increased damage based on current strength.",
 				"You've chosen the 'Whipping' perk, making your Whipping special stronger.");
