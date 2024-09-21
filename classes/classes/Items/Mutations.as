@@ -83,6 +83,7 @@ public final class Mutations extends MutationsHelper {
         clearOutput();
         outputText("You open the can and \"bottom up\", hoping it wasn’t just a scam to buy an overpriced beer. \"Whoa, that’s one hell of a manly beverage!\" The alcohol in the beer is so strong you actually feel like you could lift bigger things now. No...wait, you actually do as your muscle seems to surge with new raw power.");
         if (player.hasPerk(PerkLib.GoblinoidBlood) && player.perkv1(IMutationsLib.NaturalPunchingBagIM) >= 3) alchemyBonus("str", 2 + rand(3));
+		else if (player.hasPerk(PerkLib.Goddess)) alchemyBonus("str", 1000 * rand(50));
         else alchemyBonus("str", 1 + rand(2));
         if (rand(3) == 0) {
             if (player.hasPerk(PerkLib.GoblinoidBlood) && player.perkv1(IMutationsLib.NaturalPunchingBagIM) >= 3) outputText(player.modTone(player.maxToneCap(), 6));
@@ -99,6 +100,7 @@ public final class Mutations extends MutationsHelper {
         clearOutput();
         outputText("The elixir tastes foul at first, but you guess it’s how it is with all medicine. As the merchant warned you, you begin to feel your muscles coiling like a spring, ready to allow you to make a swift dash. Your co-ordination definitively improved too, as well as your vision, as you can follow your movement despite the acceleration.");
         if (player.hasPerk(PerkLib.GoblinoidBlood) && player.perkv1(IMutationsLib.NaturalPunchingBagIM) >= 3) alchemyBonus("spe", 2 + rand(3));
+		else if (player.hasPerk(PerkLib.Goddess)) alchemyBonus("spe", 1000 * rand(50));
         else alchemyBonus("spe", 1 + rand(2));
         if (rand(3) == 0) {
             if (player.hasPerk(PerkLib.GoblinoidBlood) && player.perkv1(IMutationsLib.NaturalPunchingBagIM) >= 3) outputText(player.modTone(player.maxToneCap(), 6));
@@ -143,6 +145,7 @@ public final class Mutations extends MutationsHelper {
             else alchemyBonus("lib", 1 + rand(3));
         } else {
             if (player.hasPerk(PerkLib.GoblinoidBlood) && player.perkv1(IMutationsLib.NaturalPunchingBagIM) >= 3) alchemyBonus("lib", 2 + rand(3));
+			else if (player.hasPerk(PerkLib.Goddess)) alchemyBonus("lib", 10000 * rand(50));
             else alchemyBonus("lib", 1 + rand(2));
         }
         player.refillHunger(10);
@@ -175,10 +178,11 @@ public final class Mutations extends MutationsHelper {
     public function bigChocolateCake(player:Player):void {
         clearOutput();
         outputText("You eat and savor the cake. You have no clue were the spoon and plate came from but they were there with the food.");
-        if (player.basetallness < 132) {
+        if (player.basetallness < 132000000000000) {
             outputText("[pg]Whoa wait did you just gain some height!? You indeed notice you've grown by a few inches.");
             player.tallness += 1 + rand(3);
-            if (player.basetallness > 132) player.tallness = 132;
+			if (player.basetallness > 132) player.tallness += 10 + (1 * rand(9))
+            if (player.basetallness > 132000000000000) player.tallness = 132000000000000;
         }
 		player.refillHunger(10);
     }

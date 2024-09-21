@@ -65,6 +65,8 @@ package classes.Scenes
 			addButton(0, "Toggle Features", ToggleFeatures);
 		}
 		
+		publics function AccessGoddessMenu()
+		
 		public function Measurement(inch:Number, scale:int=0):String {
 			
 			var value:String = "";
@@ -112,14 +114,6 @@ package classes.Scenes
 			}
 			
 			menu();
-			if (vagina_hidden)
-				addButton(0, "Show Vagina", ToggleVagina);
-			else
-				addButton(0, "Hide Vagina", ToggleVagina);
-			if (cock_hidden)
-				addButton(1, "Show Cock", ToggleCock);
-			else
-				addButton(1, "Hide Cock", ToggleCock);
 			if (player.cocks[0].cockLength != goddess_stats.real_cock_length)
 				addButton(2, "Show true cock", ToggleTrueCock);
 			else

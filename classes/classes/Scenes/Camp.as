@@ -1093,6 +1093,10 @@ public class Camp extends NPCAwareContent{
 				addButtonDisabled(12, "Sleep", "Try as you may you cannot find sleep tonight. The damn moon won't let you rest as your urges to hunt and fuck are on the rise.");
 			}
 		}
+		if (player.hasPerk(PerkLib.Goddess)) {
+			
+			
+		}
 		//if (CoC_Settings.debugBuild) addButton(14, "Cheats", testmenu.SoulforceCheats).hint("This should be obvious. ^^");
 		
 		// Goddess
