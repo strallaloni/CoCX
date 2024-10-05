@@ -311,18 +311,21 @@ public class PerkLib
 		// Ordinary (levelup) perks
 		public static const BedWarmer:PerkType = mk("Bed Warmer", "Bed Warmer",
 				"No need to fear the despairing chill of an empty bed while you're around. You're an adept cuddler... and if they ask nicely, maybe you'll even hold their hand. +10% max lust, +5 to anal/vaginal capacity.",
-				"You've chosen the 'Bed Warmer' perk. +10% max lust, +5 to anal/vaginal capacity.")
+				"You've chosen the 'Bed Warmer' perk. +10% max lust, +5 to anal/vaginal capacity.",
+				true)
 				.withBuffs({'maxlust_mult':+0.1});
 		public static const Bicycle:PerkType = mk("Bicycle", "Bicycle",
 				"You've always been an easy ride. +10% max lust, +5 to anal/vaginal capacity.",
-				"You've chosen the 'Bicycle' perk. +10% max lust, +5 to anal/vaginal capacity.")
+				"You've chosen the 'Bicycle' perk. +10% max lust, +5 to anal/vaginal capacity.",
+				true)
 				.withBuffs({'maxlust_mult':+0.1});
 		public static const BroadSelection:PerkType = mk("Broad Selection", "Broad Selection",
 				"Increasing the Tease damage by 25% for each different type of penis that you have.",
 				"You've chosen the 'Broad Selection' perk, increasing the Tease damage by 25% for each different type of penis that you have.");
 		public static const DoorKnob:PerkType = mk("Door Knob", "Door Knob",
 				"Everyone's had their turn with you. +10% max lust, +5 to anal/vaginal capacity.",
-				"You've chosen the 'Door Knob' perk. +10% max lust, +5 to anal/vaginal capacity.")
+				"You've chosen the 'Door Knob' perk. +10% max lust, +5 to anal/vaginal capacity.",
+				true)
 				.withBuffs({'maxlust_mult':+0.1});
 		public static const EnchancedWarriorsRage:PerkType = mk("Enchanced Warrior's Rage", "Enchanced Warrior's Rage",
 				"Warrior's Rage would be automatical recasted when it ends as long PC got enough wrath and it effects would be enchanced. (+1 per 5 pts of core stat value)",
@@ -365,11 +368,13 @@ public class PerkLib
 				.withBuffs({'maxlust_mult':+0.1});
 		public static const MeatHole:PerkType = mk("Meat Hole", "Meat Hole",
 				"Having your holes filled is all you know or understand. +10% max lust, +5 to anal/vaginal capacity.",
-				"You've chosen the 'Meat Hole' perk. +10% max lust, +5 to anal/vaginal capacity.")
+				"You've chosen the 'Meat Hole' perk. +10% max lust, +5 to anal/vaginal capacity.",
+				true)
 				.withBuffs({'maxlust_mult':+0.1});
 		public static const PartyBoyGirl:PerkType = mk("Party Boy/Girl", "Party Boy/Girl",
 				"You're the life of the party, particularly the types of parties that happen in Mareth. +10% max lust, +5 to anal/vaginal capacity.",
-				"You've chosen the 'Party Boy/Girl' perk. +10% max lust, +5 to anal/vaginal capacity.")
+				"You've chosen the 'Party Boy/Girl' perk. +10% max lust, +5 to anal/vaginal capacity.",
+				true)
 				.withBuffs({'maxlust_mult':+0.1});
 		public static const SmallArmy:PerkType = mk("Small Army", "Small Army",
 				"Nobody said that you had to save Mareth on your own. The more the merrier--and the easier you can sleep at night. (+10% minions/pets damage)",
@@ -382,7 +387,8 @@ public class PerkLib
 				"You've chosen the 'Strength in Numbers' perk. (+10% minions/pets damage)");
 		public static const TensionTamer:PerkType = mk("Tension Tamer", "Tension Tamer",
 				"You had something of a reputation back in Ingnam. If someone was feeling lonely, anxious, or sore (in whichever way), they knew who to call. +10% max lust, +5 to anal/vaginal capacity.",
-				"You've chosen the 'Tension Tamer' perk. +10% max lust, +5 to anal/vaginal capacity.")
+				"You've chosen the 'Tension Tamer' perk. +10% max lust, +5 to anal/vaginal capacity.",
+				true)
 				.withBuffs({'maxlust_mult':+0.1});
 		//public static const BloodSacrifice:PerkType = mk("Blood Sacrifice", "Blood Sacrifice",
 				//"You are currently sacrificing blood to empower your spells.",
@@ -484,7 +490,8 @@ public class PerkLib
 				"You've chosen the 'Adrenaline Rush' perk, to always start combat with 300 more points of wrath.");
 		public static const AdvancedAerialCombat:PerkType = mk("Advanced Aerial Combat", "Advanced Aerial Combat",
 				"You are trained to fight while in flight. (extend flight duration while using wings by 2 turns and increase evasion when flying by 5%)",
-				"You've chosen the 'Advanced Aerial Combat' perk, you trained to fight while in flight. (extend flight duration while using wings by 2 turns and increase evasion when flying by 5%)");
+				"You've chosen the 'Advanced Aerial Combat' perk, you trained to fight while in flight. (extend flight duration while using wings by 2 turns and increase evasion when flying by 5%)",
+				true);
 		public static const AdvancedAerobatics:PerkType = mk("Advanced Aerobatics", "Advanced Aerobatics",
 				"You understand the properties of wind resistance and aerodynamics nearly perfectly. (increase accuracy to melee/range attacks by 50% when flying)",
 				"You've chosen the 'Advanced Aerobatics' perk. You understand the properties of wind resistance and aerodynamics nearly perfectly. (increase accuracy to melee/range attacks by 50% when flying)",
@@ -520,7 +527,8 @@ public class PerkLib
 				.withBuffs({'maxwrath_base':+500});
 		public static const AerialCombat:PerkType = mk("Aerial Combat", "Aerial Combat",
 				"You trained basics of fighting while flying (allow melee attacks with any weapon at cost of 30% accuracy penalty).",
-				"You've chosen the 'Aerial Combat' perk, you trained basics of fighting while flying.");
+				"You've chosen the 'Aerial Combat' perk, you trained basics of fighting while flying.",
+				true);
 		public static const Aerobatics:PerkType = mk("Aerobatics", "Aerobatics",
 				"You understand the properties of wind resistance and aerodynamics and how to optimize your situation in the air. (increase accuracy to melee/range attacks by 20% when flying)",
 				"You've chosen the 'Aerobatics' perk. You understand the properties of wind resistance and aerodynamics and how to optimize your situation in the air.");
@@ -686,7 +694,8 @@ public class PerkLib
 				"You've chosen the 'Autocast' perk. You start every battle with buff spells cast, as long as your lust is sufficient to cast them.");
 		public static const AxillaryVenomGlands:PerkType = mk("Axillary Venom Glands", "Axillary Venom Glands",
 				"Increase venom/web recharge speed based by 100% at cost of 1% of max HP lost per tick. If reached max venom/web cap it will no longer cause HP decay. (if hunger mode is active will instead drain hunger 2x faster)",
-				"You've chosen the 'Axillary Venom Glands' perk. Increase venom/web recharge speed based by 100% at cost of 1% of max HP lost per tick. If reached max venom/web cap it will no longer cause HP decay. (if hunger mode is active will instead drain hunger 2x faster)");
+				"You've chosen the 'Axillary Venom Glands' perk. Increase venom/web recharge speed based by 100% at cost of 1% of max HP lost per tick. If reached max venom/web cap it will no longer cause HP decay. (if hunger mode is active will instead drain hunger 2x faster)",
+				true);
 		public static const AyoArmorProficiency:PerkType = mk("Ayo Armor Proficiency", "Ayo Armor Proficiency",
 				"Wearing Ayo Armor's grants 10% damage reduction.",
 				"You've chosen the 'Ayo Armor Proficiency' perk.  Due to your specialization in wearing ayo armor, you gain a little bit of damage reduction.");
@@ -774,10 +783,12 @@ public class PerkLib
 				" however you no longer have the ability to transform again. +50% Speed, +30% intelligence, +40% Libido +50 permanent corruption.").withBuffs({'spe.mult':0.5,'int.mult':0.3,'lib.mult':0.4});
 		public static const BodyOfSteel:PerkType = mk("Body of Steel", "Body of Steel",
 				"Your physical body has become a honed weapon, capable of striking most enemies down. With your body made of steel, your melee damage has increased again. (+10% melee phys dmg)",
-				"You've chosen the 'Body of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'Body of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const BonesOfSteel:PerkType = mk("Bones of Steel", "Bones of Steel",
 				"Your body has adapted to constant fighting, making your bones as hard as steel, increasing the damage dealt with melee attacks. (+10% melee phys dmg)",
-				"You've chosen the 'Bones of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'Bones of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const BoneSoul:PerkType = mk("Bone soul", "Bone soul",
 				"When the bone reserve is at 0 you can still cast necromancy spells. However the effect of these spells is reduced by 50%. If the player has more than 50 demon bones, damage is instead increased by 10% per 10 bone owned up to 200%. Increase limit of stored demonic bones by 100.",
 				"You've chosen the 'Bone soul' perk. When the bone reserve is at 0 you can still cast necromancy spells. However the effect of these spells is reduced by 50%. If the player has more than 50 demon bones, damage is instead increased by 10% per 10 bone owned up to 200%. Increase limit of stored demonic bones by 100.");
@@ -789,7 +800,8 @@ public class PerkLib
 				"You've chosen the 'Brawn' perk, increasing your striking power. (+10% to phantom Str bonus, +5% to unarmed atk & melee physical attacks multiplier)");
 		public static const BrothelOwner:PerkType = mk("Brothel Owner", "Brothel Owner",
 				"You are now above having sex by yourself, having created an industry and now teach new women and men to have sex. These allow you to refine your tricks, increasing your tease damage by 15%.",
-				"You've chosen the 'Brothel Owner' perk, gaining +15% tease dmg.");
+				"You've chosen the 'Brothel Owner' perk, gaining +15% tease dmg.",
+				true);
 		public static const BrutalBlows:PerkType = mk("Brutal Blows", "Brutal Blows",
 				"[if(player.str>=75)" +
 						"Reduces enemy armor with each hit. (+5% melee physical attacks multiplier)" +
@@ -1516,7 +1528,8 @@ public class PerkLib
 				"You've chosen the 'Glacial Storm (Su)' perk. Prevent decay of cumulative damage increase bonus when channeling ice based attack. Penalty for turn without casted ice spell decreased by another 10%. Maximum 75 stacks.");
 		public static const GodOfSteel:PerkType = mk("God of Steel", "God of Steel",
 				"You have surpassed your mortal self to become the embodiment of melee damage, further increasing it. (+10% melee phys dmg)",
-				"You've chosen the 'God of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'God of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const GolemArmyCaptain:PerkType = mk("Golem Army Captain", "Golem Army Captain",
 				"+1/1/3/6 to max limit stored of permanent steel and (permanent improved/normal)/temporary stone golems.",
 				"You've chosen the 'Golem Army Captain' perk, allowing you to store additional permanent steel golem and (improved stone +1/stone +3) and temporary (+6) stone golems in your golem bag.");
@@ -1631,7 +1644,8 @@ public class PerkLib
 				"You've chosen the 'Grand Tactician' perk, increasing physical critical hit chance by up to 30% (Intelligence-based).");
 		public static const GreaterAerialCombat:PerkType = mk("Greater Aerial Combat", "Greater Aerial Combat",
 				"You have learned to use air and gravity to your own benefit. (extend flight duration while using wings by 4 turns and increase evasion when flying by 10%)",
-				"You've chosen the 'Greater Aerial Combat' perk, you learned to use air and gravity to your own benefit. (extend flight duration while using wings by 4 turns and increase evasion when flying by 10%)");
+				"You've chosen the 'Greater Aerial Combat' perk, you learned to use air and gravity to your own benefit. (extend flight duration while using wings by 4 turns and increase evasion when flying by 10%)",
+				true);
 		public static const GreaterBrawn:PerkType = mk("Greater Brawn", "Greater Brawn",
 				"You have greatly improved your striking power. (+20% to phantom Str bonus, +15% to unarmed atk & melee physical attacks multiplier)",
 				"You've chosen the 'Greater Brawn' perk, greatly improving your striking power. (+20% to phantom Str bonus, +15% to unarmed atk & melee physical attacks multiplier)");
@@ -1839,7 +1853,8 @@ public class PerkLib
 				"You've chosen the 'Hammer' perk, increasing armor proficiency. (+5% phys/mag resistance)");
 		public static const HeartOfSteel:PerkType = mk("Heart of Steel", "Heart of Steel",
 				"Even your heart has grown used to fighting, after all, the saying goes 'Steel your heart', further increasing your melee strength. (+10% melee phys dmg)",
-				"You've chosen the 'Heart of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'Heart of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const HeavysFriend:PerkType = mk("Heavy's Friend", "Heavy's Friend",
 				"I like you! Cover Heavy! (You'll definitely need that +10% ranged damage buff if you're going in front of that dude)",
 				"You've chosen the 'Heavy's Friend' perk, gaining +10% range phys dmg.");
@@ -1858,7 +1873,8 @@ public class PerkLib
 				"You've chosen the 'Hidden Momentum' perk, allowing you to use your speed to enhance power of your attacks with single large weapons.");
 		public static const HighlyVenomousDiet:PerkType = mk("Highly Venomous Diet", "Higly Venomous Diet",
 				"Increase venom/web recharge speed at cost of faster getting hungry. If reached max venom/web cap it will no longer cause faster hunger bar decay. (will have no effect if max venom/web is at 0)",
-				"You've chosen the 'Higly Venomous Diet' perk. Increase venom/web recharge speed at cost of faster getting hungry. If reached max venom/web cap it will no longer cause faster hunger bar decay. (will have no effect if max venom/web is at 0)");
+				"You've chosen the 'Higly Venomous Diet' perk. Increase venom/web recharge speed at cost of faster getting hungry. If reached max venom/web cap it will no longer cause faster hunger bar decay. (will have no effect if max venom/web is at 0)",
+				true);
 		public static const HighVoltage:PerkType = mk("High Voltage", "High Voltage",
 				"Cumulative 40% damage increase for every subsequent lightning spell. Each turn without cast lightning spell lower damage by 40% down to normal (100%) damage. Maximum 5 stacks.",
 				"You've chosen the 'High Voltage' perk. Cumulative 40% damage increase for every subsequent lightning spell. Each turn without cast lightning spell lower damage by 40% down to normal (100%) damage. Maximum 5 stacks.");
@@ -2382,7 +2398,8 @@ public class PerkLib
 				"You've chosen the 'Meteor Strike' perk, doubling the chance for Jabbing grandmaster to do extra attacks and doubling the damage from grabbing style. This only works when fighting unarmed with no shield equipped.");
 		public static const MindOfSteel:PerkType = mk("Mind of Steel", "Mind of Steel",
 				"Careful now, you're becoming too much like a weapon. You're mindset has become that of a weapon, allowing you to connect with your melee weapon to deal even more damage. (+10% melee phys dmg)",
-				"You've chosen the 'Mind of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'Mind of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const MindOverBodyI:PerkType = mk("Mind over Body I", "Mind over Body I",
 				"+6 extra mana per point of intelligence.",
 				"You've chosen the 'Mind over Body I' perk, granting +6 extra maximum mana for each point of intelligence.")
@@ -2421,7 +2438,8 @@ public class PerkLib
 				"You've chosen the 'Motivation (Su)' perk. All followers do two actions per turn, and increases the damage bonuses of other Motivation perks by 1.5.");
 		public static const MusclesOfSteel:PerkType = mk("Muscles of Steel", "Muscles of Steel",
 				"Your body has further adapted to fighting, strengthening your muscles so that they too possess the power of steel to further your melee power. (+10% melee phys dmg)",
-				"You've chosen the 'Muscles of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'Muscles of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const MythicalBrawn:PerkType = mk("Mythical Brawn", "Mythical Brawn",
 				"You have improved your striking power to epic level. (+35% to phantom Str bonus, +30% to unarmed atk & melee physical attacks multiplier)",
 				"You've chosen the 'Mythical Brawn' perk, improving your striking power to epic level. (+35% to phantom Str bonus, +30% to unarmed atk & melee physical attacks multiplier)");
@@ -2477,7 +2495,8 @@ public class PerkLib
 				true).withBuffs({'wis.mult':0.65});
 		public static const NakedTruth:PerkType = mk("Naked Truth", "Naked Truth",
 				"Opponent have a hard time dealing serious damage as the sight of your naked body distracts them (+10% dmg reduction).",
-				"You've chosen the 'Naked Truth' perk, causing opponents to have a hard time dealing serious damage as the sight of your naked body distract them (+10% dmg reduction).");
+				"You've chosen the 'Naked Truth' perk, causing opponents to have a hard time dealing serious damage as the sight of your naked body distract them (+10% dmg reduction).",
+				true);
 		public static const NamedBullet:PerkType = mk("Named Bullet", "Named Bullet",
 				"Bosses fears your guns, add 50% increased damage to bosses. (+20% firearms attacks multiplier)",
 				"You've chosen the 'Named Bullet' perk, allowing your guns to deal extra damage to boss enemies. (+20% firearms attacks multiplier)");
@@ -2610,7 +2629,8 @@ public class PerkLib
 				"You've chosen the 'Pope' perk, lowering min libido by 2 and raise lust resistance by 5%.");
 		public static const Pornstar:PerkType = mk("Pornstar", "Pornstar",
 				"You are famous for your acts of sex, with many teenagers dreaming of having a chance with you. All the tips you learned help your tease damage by 15%.",
-				"You've chosen the 'Pornstar' perk, gaining +15% tease dmg.");
+				"You've chosen the 'Pornstar' perk, gaining +15% tease dmg.",
+				true);
 		public static const PowerShot:PerkType = mk("Power Shot", "Power Shot",
 				"Enable Power Shot p. special. Add ~20% of base stat scaling value to range (not for firearms) damage. (+5% range physical attacks multiplier)",
 				"You've chosen the 'Power Shot' perk. Enable Power Shot p. special. Add ~20% of base stat scaling value to range (not for firearms) damage. (+5% range physical attacks multiplier)",
@@ -2689,7 +2709,7 @@ public class PerkLib
 				"Add speed based scaling of melee attacks when using small weapon(s). It effect is added on top of Speed Demon perk boost.",
 				"You've chosen the 'Quick Strike' perk, allowing you to use your speed when attacking with small melee weapons.");
 		public static const RacialParagon:PerkType = mk("Racial Paragon", "Racial Paragon",
-				"Add up to 1 to each stat per level and increase racial skill power by 50% but remove all chimerical disposition stat gains and degeneration as well lock you into a single race.",
+				"Add up to 1 to each stat per level and increase racial skill power by 50% but remove all chimerical disposition stat gains and degeneration as well as lock you into a single race.",
 				"You've chosen the 'Racial Paragon' perk, chosing to specialise into a specific race and increasing racial skill power by 50%.");
 		public static const Rage:PerkType = mk("Rage", "Rage",
 				"Increasing the critical chance by up to 70% & crit dmg by up to 175% in berserk state that would reset after succesful crit attack. Adds Diehard effect up to 5% of max HP. (+10% melee physical attacks multiplier, 2x for been under berzerk type state and another 2x when using large or masive weapon(s))",
@@ -2844,7 +2864,8 @@ public class PerkLib
 				"You've chosen the 'Sensual' perk, lowering by ~40% the needed exp to lvl-up tease and +1 more tease exp after succes.");
 		public static const SexChampion:PerkType = mk("Sex Champion", "Sex Champion",
 				"You are the shining symbol of the sex industry, the beacon of hope for those aspiring in the industry. The sheer number of tricks and tips you have up your tease damage 15%.",
-				"You've chosen the 'Sex Champion' perk, gaining +15% tease dmg.");
+				"You've chosen the 'Sex Champion' perk, gaining +15% tease dmg.",
+				true);
 		public static const SexDeity:PerkType = mk("Sex Deity", "Sex Deity",
 				"Screw Xeria, you're the true sex deity! You're holiness empowers your sex drive, increasing your tease damage by 15%.",
 				"You've chosen the 'Sex Deity' perk, gaining +15% tease dmg.");
@@ -2916,7 +2937,8 @@ public class PerkLib
 				"You've chosen the 'Slayer' perk. Increase sneaky attack dmg by another 300% base value (7x).");
 		public static const SluttySimplicity:PerkType = mk("Slutty Simplicity", "Slutty Simplicity",
 				"Increases tease effect by 10% when you are naked. (Undergarments won't disable this perk.)",
-				"You've chosen the 'Slutty Simplicity' perk. Increases tease effect by 10% when you are naked. (Undergarments won't disable this perk.)");
+				"You've chosen the 'Slutty Simplicity' perk. Increases tease effect by 10% when you are naked. (Undergarments won't disable this perk.)",
+				true);
 		public static const SneakyAttack:PerkType = mk("Sneaky attack", "Sneaky attack",
 				"Striking the vitals of a stunned, blinded or distracted opponent deals heavy damage (2x). Sneak attack is applied to all attacks when using dagger type weapons.",
 				"You've chosen the 'Sneaky attack' perk. Striking the vitals of a stunned, blinded or distracted opponent deals heavy damage (2x). Sneak attack is applied to all attacks when using dagger type weapons.");
@@ -2928,7 +2950,8 @@ public class PerkLib
 				"You've chosen the 'Soldier's Friend' perk, gaining +10% range phys dmg.");
 		public static const SoulOfSteel:PerkType = mk("Soul of Steel", "Soul of Steel",
 				"Every aspect of you has become a weapon. Your melee damage has increased yet again, but could you even be considered living at this point? (+10% melee phys dmg)",
-				"You've chosen the 'Soul of Steel' perk, gaining +10% melee phys dmg.");
+				"You've chosen the 'Soul of Steel' perk, gaining +10% melee phys dmg.",
+				true);
 		public static const SoulPowered:PerkType = mk("Soul Powered", "Soul Powered",
 				"You use your soul force more than anything else... increasing its size by 10%.",
 				"You've chosen the 'Soul Powered' perk, gaining +10% max Soulforce.")
@@ -3209,7 +3232,8 @@ public class PerkLib
 				"You've chosen the 'Unbreakable bind' perk. Improves all binding abilities efficiency by 100%.");
 		public static const Unhindered:PerkType = mk("Unhindered", "Unhindered",
 				"Increases chances of evading enemy attacks when you are naked. (Undergarments won't disable this perk.)",
-				"You've chosen the 'Unhindered' perk, increasing your chance to evade when you are naked.");
+				"You've chosen the 'Unhindered' perk, increasing your chance to evade when you are naked.",
+				true);
 		public static const UnlimitedRage:PerkType = mk("Unlimited rage", "Unlimited rage",
 				"Wrath generated by base melee/range attacks and abilities increases by 200%. (+10% melee physical attacks multiplier)",
 				"You've chosen the 'Unlimited rage' perk, wrath generated by base melee/range attacks and abilities increases by 200%. (+10% melee physical attacks multiplier)");
@@ -3310,10 +3334,12 @@ public class PerkLib
 				"You've chosen the 'Vampiric blade' perk, recovering some HP after each succesfull melee attack. (+20% melee physical attacks multiplier)");
 		public static const VenomousAdiposeTissue:PerkType = mk("Venomous Adipose Tissue", "Venomous Adipose Tissue",
 				"Increase venom/web recharge speed and maximum capacity based on current toughness and thickness. (higher tou/thick value the smaller increases) (will have no effect if max venom/web is at 0)",
-				"You've chosen the 'Venomous Adipose Tissue' perk. Increase venom/web recharge speed and maximum capacity based on current toughness and thickness. (higher tou/thick value the smaller increases) (will have no effect if max venom/web is at 0)");
+				"You've chosen the 'Venomous Adipose Tissue' perk. Increase venom/web recharge speed and maximum capacity based on current toughness and thickness. (higher tou/thick value the smaller increases) (will have no effect if max venom/web is at 0)",
+				true);
 		public static const VenomousDiet:PerkType = mk("Venomous Diet", "Venomous Diet",
 				"Increase venom/web recharge speed based on current hunger level. (will have no effect if max venom/web is at 0)",
-				"You've chosen the 'Venomous Diet' perk. Increase venom/web recharge speed based on current hunger level. (will have no effect if max venom/web is at 0)");
+				"You've chosen the 'Venomous Diet' perk. Increase venom/web recharge speed based on current hunger level. (will have no effect if max venom/web is at 0)",
+				true);
 		public static const VerdantLeech:PerkType = mk("Verdant Leech", "Verdant Leech",
 				"Your Elven spells and black magic raises your opponent's weakness to lust and heals you for 5% of your health each time they inflict poison.",
 				"You've chosen the 'Verdant Leech' perk. Your Elven spells and black magic raises your opponent's weakness to lust and heals you for 5% of your health each time they inflict poison.");
@@ -3976,7 +4002,8 @@ public class PerkLib
 		public static const ImpNobility:PerkType = mk("Imp Nobility", "Imp Nobility",
 				"Can recruit other imps to form a swarm. All Tease and spellcasting are reinforced by a percentage equal to the number of imps under your command.");
 		public static const ImprovedVenomGland:PerkType = mk("Improved venom gland", "Improved venom gland",
-				"Increase slightly your venom max capacity and refill speed.");
+				"Increase slightly your venom max capacity and refill speed.",
+				true);
 		public static const ImprovedVenomGlandEx:PerkType = mk("Improved venom gland (Ex)", "Improved venom gland (Ex)",
 				"Increase your venom max capacity and refill speed. Decrease by 25% costs of specials/passives that req. use of venom/web.");
 		public static const ImprovedVenomGlandSu:PerkType = mk("Improved venom gland (Su)", "Improved venom gland (Su)",
